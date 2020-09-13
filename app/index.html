@@ -1,18 +1,654 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>MartPlace</title>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
+
 <body>
 
+  <!-- Header start-->
+  <header class="header">
+    <div class="wrapper">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a class="header__link" href="#">
+              <img class="header__img" src="images/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="header__boxing">
+            <div class="header__top">
+              <a class="header__seller" href="#">
+                Become a Seller
+              </a>
+            </div>
+            <div class="header__alerts">
+              <a class="header__alarm" href="#">
+                <span class="lnr lnr-alarm"></span>
+              </a>
+              <a class="header__letter" href="#">
+                <span class="lnr lnr-envelope"></span>
+              </a>
+              <a class="header__basket" href="#">
+                <span class="lnr lnr-cart"></span>
+              </a>
+            </div>
+            <a class="header__foto" href="#" style="background-image: url(images/face.jpg);"></a>
+            <div class="header__profile">
+              <a class="header__name" href="#">
+                Taofiq Hakim
+              </a>
+              <span class="header__check">$20.45</span>
+            </div>
+          </div>
 
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu start-->
+
+    <div class="menu">
+      <div class="container">
+        <div class="menu__inner">
+          <nav class="menu">
+            <ul class="menu__nav">
+              <li class="menu__list">
+                <a class="menu__link" href="#">Home</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" href="#">All products</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" href="#">Wordpress</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" href="#">Festures</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" href="#">Pages</a>
+              </li>
+            </ul>
+          </nav>
+          <form class="search" action="#">
+            <label>
+              <input class="search__input" type="search" name="search" placeholder="Search product here..." required>
+              <button class="search__magnify" type="submit" href="#"></button>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section Marketplace start-->
+
+  <main class="main">
+    <section class="marketplace">
+      <div class="container">
+        <div class="marketplace__inner">
+          <div class="marketplace__title">
+            Create Your Own
+            <span class="marketplace__word">
+              Digital Product Marketplace
+            </span>
+            <p class="marketplace__text">
+              MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+            </p>
+            <a class="marketplace__link marketplace__link--all" href="#">
+              View All Products
+            </a>
+            <a class="marketplace__link marketplace__link--popular" href="#">
+              Popular Products
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Form start-->
+
+    <section class="form">
+      <div class="container">
+        <div class="form__categories">
+          <form class="form__box" action="#" method="post">
+            <label>
+              <input class="form__search" type="search" name="search" placeholder="Search your products..." required>
+              <select class="form__select" name="categories">
+                <option class="form__option" selected value="All Categories">All Categories</option>
+              </select>
+              <span class="lnr lnr-chevron-down"></span>
+              <button class="form__btn" type="submit">Search Now</button>
+            </label>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section About start-->
+
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__info about__info--research">
+            <div class="about__title">
+              Best UX Research
+            </div>
+            <p class="about__text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </p>
+          </div>
+
+          <div class="about__info about__info--responsive">
+            <div class="about__title">
+              Fully Responsive
+            </div>
+            <p class="about__text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </p>
+          </div>
+
+          <div class="about__info about__info--sell ">
+            <div class="about__title">
+              Buy & Sell Easily
+            </div>
+            <p class="about__text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Featured start-->
+
+    <section class="featured">
+      <div class="container">
+        <div class="featured__choice">
+          <span class="featured__choice-arrow" href="#">Weekly Featured Products</span>
+        </div>
+        <div class="featured__inner">
+          <div class="featured__slider">
+            <div class="featured__template">
+              <div class="featured__link">
+                <a class="featured__info marketplace__link--popular" href="#">More Info</a>
+                <a class="featured__info marketplace__link--all" href="#">Live Demo</a>
+              </div>
+              <div class="featured__img" href="#" style="background-image: url(images/slider-1.jpg);"></div>
+            </div>
+            <div class="featured__rezume">
+              <div class="featured__title">
+                One Page Resume Template
+              </div>
+              <div class="featured__profile">
+                <a class="featured__foto" style="background-image: url(images/face.jpg);" href="#"></a>
+                <a class="featured__name" href="#">
+                  AazzTech
+                </a>
+                <span class="featured__word">
+                  WordPress
+                </span>
+              </div>
+              <p class="featured__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                leo
+                quam aliquet congue justo ut scelerisque.
+              </p>
+              <span class="featured__use">website</span>
+              <span class="featured__use">plugin</span>
+              <span class="featured__use">landing page</span>
+              <div class="featured__price-box">
+                <div class="featured__price">
+                  <span class="featured__cost">
+                    $10 - $50
+                  </span>
+                  <button class="featured__btn" type="submit">
+                    <span class="lnr lnr-heart"></span>
+                  </button>
+                  <span class="featured__figures">46</span>
+                  <button class="featured__btn" type="submit">
+                    <span class="lnr lnr-cart"></span>
+                  </button>
+                  <span class="featured__figure">634</span>
+                </div>
+                <div class="featured__stars"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="featured__slider">
+            <div class="featured__template">
+              <div class="featured__link">
+                <a class="featured__info marketplace__link--popular" href="#">More Info</a>
+                <a class="featured__info marketplace__link--all" href="#">Live Demo</a>
+              </div>
+              <div class="featured__img" href="#" style="background-image: url(images/slider-2.jpg);"></div>
+            </div>
+            <div class="featured__rezume">
+              <div class="featured__title">
+                One Page Resume Template
+              </div>
+              <div class="featured__profile">
+                <a class="featured__foto" style="background-image: url(images/face.jpg);" href="#"></a>
+                <a class="featured__name" href="#">
+                  AazzTech
+                </a>
+                <span class="featured__word">
+                  WordPress
+                </span>
+              </div>
+              <p class="featured__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                leo
+                quam aliquet congue justo ut scelerisque.
+              </p>
+              <span class="featured__use">website</span>
+              <span class="featured__use">plugin</span>
+              <span class="featured__use">landing page</span>
+              <div class="featured__price-box">
+                <div class="featured__price">
+                  <span class="featured__cost">
+                    $10 - $50
+                  </span>
+                  <button class="featured__btn" type="submit">
+                    <span class="lnr lnr-heart"></span>
+                  </button>
+                  <span class="featured__figures">46</span>
+                  <button class="featured__btn" type="submit">
+                    <span class="lnr lnr-cart"></span>
+                  </button>
+                  <span class="featured__figure">634</span>
+                </div>
+                <div class="featured__stars"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="featured__slider">
+            <div class="featured__template">
+              <div class="featured__link">
+                <a class="featured__info marketplace__link--popular" href="#">More Info</a>
+                <a class="featured__info marketplace__link--all" href="#">Live Demo</a>
+              </div>
+              <div class="featured__img" href="#" style="background-image: url(images/slider-3.jpg);"></div>
+            </div>
+            <div class="featured__rezume">
+              <div class="featured__title">
+                One Page Resume Template
+              </div>
+              <div class="featured__profile">
+                <a class="featured__foto" style="background-image: url(images/face.jpg);" href="#"></a>
+                <a class="featured__name" href="#">
+                  AazzTech
+                </a>
+                <span class="featured__word">
+                  WordPress
+                </span>
+              </div>
+              <p class="featured__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                leo
+                quam aliquet congue justo ut scelerisque.
+              </p>
+              <span class="featured__use">website</span>
+              <span class="featured__use">plugin</span>
+              <span class="featured__use">landing page</span>
+              <div class="featured__price-box">
+                <div class="featured__price">
+                  <span class="featured__cost">
+                    $10 - $50
+                  </span>
+                  <button class="featured__btn" type="submit">
+                    <span class="lnr lnr-heart"></span>
+                  </button>
+                  <span class="featured__figures">46</span>
+                  <button class="featured__btn" type="submit">
+                    <span class="lnr lnr-cart"></span>
+                  </button>
+                  <span class="featured__figure">634</span>
+                </div>
+                <div class="featured__stars"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Products start-->
+
+    <section class="products">
+      <div class="container">
+        <div class="products__release featured__choice">
+          <span class="products__new" href="#">Newest Release Products</span>
+          <span class="products__filter" href="#">
+            Filter by:
+          </span>
+          <ul class="products__list">
+            <li class="products__list-item">
+              <a class="products__link-item products__link-item--active" href="#">Trending items</a>
+            </li>
+            <li class="products__list-item">
+              <a class="products__link-item" href="#">Best seller</a>
+            </li>
+            <li class="products__list-item">
+              <a class="products__link-item" href="#">Best rating</a>
+            </li>
+            <li class="products__list-item">
+              <a class="products__link-item" href="#">Low price</a>
+            </li>
+            <li class="products__list-item">
+              <a class="products__link-item" href="#">High price</a>
+            </li>
+          </ul>
+          </li>
+        </div>
+        <div class="products__category">
+          <button class="products__btn products__btn--active" type="button"
+            data-filter=".category-plugin">Plugins</button>
+          <button class="products__btn" type="button" data-filter=".category-wordpress">WordPress</button>
+          <button class="products__btn" type="button" data-filter=".category-site">Site Template</button>
+          <button class="products__btn" type="button" data-filter=".category-psd">PSD Template</button>
+          <button class="products__btn" type="button" data-filter=".category-joomla">Joomla</button>
+          <button class="products__btn" type="button" data-filter=".category-interface">User Interface</button>
+          <button class="products__btn" type="button" data-filter=".category-landing">Landing Page</button>
+          <button class="products__btn" type="button" data-filter=".category-software">Software</button>
+        </div>
+        <div class="products__inner">
+
+          <article class="products__shop mix category-plugin" data-order="1">
+            <div class="products__link">
+              <a class="products__info marketplace__link--popular" href="#">More Info</a>
+              <a class="products__info marketplace__link--all" href="#">Live Demo</a>
+            </div>
+            <div class="products__image" style="background-image: url(images/slider-1.jpg);"></div>
+            <div class="products__resume">
+              <div class="products__title">
+                E-commerce Shopping Cart
+              </div>
+              <div class="products__profile featured__profile">
+                <a class="products__foto featured__foto" style="background-image: url(images/face.jpg);" href="#"></a>
+                <a class="products__name featured__name" href="#">
+                  Theme-Valley
+                </a>
+                <span class="products__word featured__word">
+                  Plugin
+                </span>
+              </div>
+              <p class="products__text featured__text">
+                Nunc placerat mi id nisi interdum mollis.
+                Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </p>
+            </div>
+            <div class="products__box featured__price-box">
+              <div class="products__price featured__price">
+                <span class="products__cost featured__cost">
+                  $20
+                </span>
+                <button class="products__heart featured__btn" type="button">
+                  <span class="lnr lnr-heart"></span>
+                </button>
+                <span class="products__figures featured__figures">90</span>
+              </div>
+              <div class="products__basket">
+                <button class="products__cart featured__btn" type="button">
+                  <span class="lnr lnr-cart"></span>
+                </button>
+                <span class="products__figure featured__figure">246</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="products__shop mix category-psd category-plugin category-all" data-order="2">
+            <div class="products__link">
+              <a class="products__info marketplace__link--popular" href="#">More Info</a>
+              <a class="products__info marketplace__link--all" href="#">Live Demo</a>
+            </div>
+            <div class="products__image" style="background-image: url(images/slider-2.jpg);"></div>
+            <div class="products__resume">
+              <div class="products__title">
+                Marketify Coffee Shop
+              </div>
+              <div class="products__profile featured__profile">
+                <a class="products__foto featured__foto" style="background-image: url(images/face.jpg);" href="#"></a>
+                <a class="products__name featured__name" href="#">
+                  EchoTheme
+                </a>
+                <span class="products__psd">
+                  PSD
+                </span>
+              </div>
+              <p class="products__text featured__text">
+                Nunc placerat mi id nisi interdum mollis.
+                Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </p>
+            </div>
+            <div class="products__box featured__price-box">
+              <div class="products__price featured__price">
+                <span class="products__cost featured__cost">
+                  $18
+                </span>
+                <button class="products__heart featured__btn" type="button">
+                  <span class="lnr lnr-heart"></span>
+                </button>
+                <span class="products__figures featured__figures">48</span>
+              </div>
+              <div class="products__basket">
+                <button class="products__cart featured__btn" type="button">
+                  <span class="lnr lnr-cart"></span>
+                </button>
+                <span class="products__figure featured__figure">50</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="products__shop mix category-software category-plugin" data-order="3">
+            <div class="products__link">
+              <a class="products__info marketplace__link--popular" href="#">More Info</a>
+              <a class="products__info marketplace__link--all" href="#">Live Demo</a>
+            </div>
+            <div class="products__image" style="background-image: url(images/slider-3.jpg);"></div>
+            <div class="products__resume">
+              <div class="products__title">
+                Bryson - Portfolio Template
+              </div>
+              <div class="products__profile featured__profile">
+                <a class="products__foto featured__foto" style="background-image: url(images/face.jpg);" href="#"></a>
+                <a class="products__name featured__name" href="#">
+                  Artcorner
+                </a>
+                <span class="products__html">
+                  HTML
+                </span>
+              </div>
+              <p class="products__text featured__text">
+                Nunc placerat mi id nisi interdum mollis.
+                Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </p>
+            </div>
+            <div class="products__box featured__price-box">
+              <div class="products__price featured__price">
+                <span class="products__cost featured__cost">
+                  $10
+                </span>
+                <button class="products__heart featured__btn" type="button">
+                  <span class="lnr lnr-heart"></span>
+                </button>
+                <span class="products__figures featured__figures">56</span>
+              </div>
+              <div class="products__stars featured__stars"></div>
+              <div class="products__basket">
+                <button class="products__cart featured__btn" type="button">
+                  <span class="lnr lnr-cart"></span>
+                </button>
+                <span class="products__figure featured__figure">68</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="products__shop mix category-wordpress category-plugin category-all" data-order="4">
+            <div class="products__link">
+              <a class="products__info marketplace__link--popular" href="#">More Info</a>
+              <a class="products__info marketplace__link--all" href="#">Live Demo</a>
+            </div>
+            <div class="products__image" style="background-image: url(images/slider-3.jpg);"></div>
+            <div class="products__resume">
+              <div class="products__title">
+                E-commerce Shopping Cart
+              </div>
+              <div class="products__profile featured__profile">
+                <a class="products__foto featured__foto" style="background-image: url(images/face.jpg);" href="#"></a>
+                <a class="products__name featured__name" href="#">
+                  Design-Hub
+                </a>
+                <span class="products__word featured__word">
+                  Plugin
+                </span>
+              </div>
+              <p class="products__text featured__text">
+                Nunc placerat mi id nisi interdum mollis.
+                Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </p>
+            </div>
+            <div class="products__box featured__price-box">
+              <div class="products__price featured__price">
+                <span class="products__cost featured__cost">
+                  $10-50
+                </span>
+                <button class="products__heart featured__btn" type="button">
+                  <span class="lnr lnr-heart"></span>
+                </button>
+                <span class="products__figures featured__figures">90</span>
+              </div>
+              <div class="products__stars featured__stars"></div>
+              <div class="products__basket">
+                <button class="products__cart featured__btn" type="button">
+                  <span class="lnr lnr-cart"></span>
+                </button>
+                <span class="products__figure featured__figure">45</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="products__shop mix category-psd category-plugin" data-order="5">
+            <div class="products__link">
+              <a class="products__info marketplace__link--popular" href="#">More Info</a>
+              <a class="products__info marketplace__link--all" href="#">Live Demo</a>
+            </div>
+            <div class="products__image" style="background-image: url(images/slider-2.jpg);"></div>
+            <div class="products__resume">
+              <div class="products__title">
+                Marketify Coffee Shop
+              </div>
+              <div class="products__profile featured__profile">
+                <a class="products__foto featured__foto" style="background-image: url(images/face.jpg);" href="#"></a>
+                <a class="products__name featured__name" href="#">
+                  AazzTech
+                </a>
+                <span class="products__psd">
+                  PSD
+                </span>
+              </div>
+              <p class="products__text featured__text">
+                Nunc placerat mi id nisi interdum mollis.
+                Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </p>
+            </div>
+            <div class="products__box featured__price-box">
+              <div class="products__price featured__price">
+                <span class="products__cost featured__cost">
+                  $10-50
+                </span>
+                <button class="products__heart featured__btn" type="button">
+                  <span class="lnr lnr-heart"></span>
+                </button>
+                <span class="products__figures featured__figures">48</span>
+              </div>
+              <div class="products__basket">
+                <button class="products__cart featured__btn" type="button">
+                  <span class="lnr lnr-cart"></span>
+                </button>
+                <span class="products__figure featured__figure">50</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="products__shop mix category-joomla category-plugin category-all" data-order="6">
+            <div class="products__link">
+              <a class="products__info marketplace__link--popular" href="#">More Info</a>
+              <a class="products__info marketplace__link--all" href="#">Live Demo</a>
+            </div>
+            <div class="products__image" style="background-image: url(images/slider-1.jpg);"></div>
+            <div class="products__resume">
+              <div class="products__title">
+                Bryson - Portfolio Template
+              </div>
+              <div class="products__profile featured__profile">
+                <a class="products__foto featured__foto" style="background-image: url(images/face.jpg);" href="#"></a>
+                <a class="products__name featured__name" href="#">
+                  Coder-Lab
+                </a>
+                <span class="products__html">
+                  HTML
+                </span>
+              </div>
+              <p class="products__text featured__text">
+                Nunc placerat mi id nisi interdum mollis.
+                Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </p>
+            </div>
+            <div class="products__box featured__price-box">
+              <div class="products__price featured__price">
+                <span class="products__cost featured__cost">
+                  $10
+                </span>
+                <button class="products__heart featured__btn" type="button">
+                  <span class="lnr lnr-heart"></span>
+                </button>
+                <span class="products__figures featured__figures">56</span>
+              </div>
+              <div class="products__stars featured__stars"></div>
+              <div class="products__basket">
+                <button class="products__cart featured__btn" type="button">
+                  <span class="lnr lnr-cart"></span>
+                </button>
+                <span class="products__figure featured__figure">68</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="products__look">
+          <button class="products__all" type="button" data-filter=".category-all">All New Products</button>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
