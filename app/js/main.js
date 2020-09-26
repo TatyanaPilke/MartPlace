@@ -15,20 +15,31 @@ $(function(){
   });
 
   $('.featured__inner').slick({
-    arrows: true,
-    fade: true,
-    prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/chevron-left.png" alt="prev arrow"></button>',
-    nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/chevron-right.png" alt="next arrow"></button>',
+    prevArrow: '<button type="button" class="featured-arrow featured-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
+    nextArrow: '<button type="button" class="featured-arrow featured-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
+    appendArrows: '.arrows-wrap'
   })
 
+
   $('.followers__box').slick({
+    variableWidth: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: '<button type="button" class="featured-arrow featured-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
+    nextArrow: '<button type="button" class="featured-arrow featured-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
+    appendArrows: '.arrows-followers'
+  })
+  
+  $('.feedback__box').slick({
+    variableWidth: true,
     arrows: true,
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
-    // prevArrow: '<button class="followers-arrow followers-prev"><img src="images/icons/chevron-left.png" alt="prev arrow"></button>',
-    // nextArrow: '<button class="followers-arrow follorwers-next"><img src="images/icons/chevron-right.png" alt="next arrow"></button>',
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    prevArrow: '<button class="feedback-arrow feedback-arrow--prev"></button><span class="lnr lnr-chevron-left feedback-btn feedback-btn--prev"></span></button>',
+    nextArrow: '<button class="feedback-arrow feedback-arrow--next"></button><span class="lnr lnr-chevron-right feedback-btn feedback-btn--next"></span></button>',
   })
+
 
   var mixer = mixitup('.new-products__inner');
 

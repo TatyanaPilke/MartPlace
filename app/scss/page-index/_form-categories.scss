@@ -1,0 +1,95 @@
+.form-categories {
+  position: absolute;
+  bottom: -66px;
+  max-width: 1140px;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    opacity: 0.5;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $white;
+    border-radius: 6px 6px 0 0;
+  }
+
+  &::before {
+    content: " ";
+    height: 30px;
+    top: -26px;
+    max-width: 95%;
+  }
+
+  &::after {
+    content: " ";
+    height: 15px;
+    top: -13px;
+    max-width: 97%;
+  }
+
+  &__search {
+    padding: 40px 38px 40px 40px;
+    border-radius: 6px;
+    min-height: 135px;
+    background-color: $white;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  &__input {
+    padding: 18px 27px 17px;
+    max-width: 612px;
+    width: 100%;
+    outline: transparent;
+    border: 1px solid #dcdcdc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+
+    &:hover {
+      border: 1px solid $border-hover;
+    }
+  }
+
+  &__select {
+    width: 195px;
+    margin-left: -4px;
+    padding: 18px 20px 17px 20px;
+    outline: transparent;
+    border: 1px solid #dcdcdc;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    appearance: none;
+    color: $grey;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: 160px;
+
+
+    &:hover {
+      border: 1px solid $border-hover;
+    }
+  }
+
+  &__btn {
+    padding: 19px 69px 18px 68px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: transparent;
+    margin-left: 24px;
+
+    &:hover {
+      box-shadow: 5px 5px rgba(84, 67, 146, 0.1);
+      color: $grey;
+    }
+
+    &:active {
+      background-color: rgb(33, 18, 165);
+      transition: all .3s;
+    }
+  }
+}

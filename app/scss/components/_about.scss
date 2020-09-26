@@ -1,0 +1,43 @@
+.about {
+
+  &__inner {
+    justify-content: space-between;
+    padding: 185px 0 120px;
+  }
+}
+
+.about-info {
+  max-width: 360px;
+  max-height: 405px;
+  text-align: center;
+  padding: 43px 30px 50px;
+
+  &:hover {
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  &__img {
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  &__title {
+    color: $black;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}

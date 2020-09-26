@@ -30,15 +30,6 @@ a {
   text-decoration: none;
 }
 
-.title {
-  font-size: 30px;
-  background-color: #fff;
-  padding: 38px 100px 38px 30px;
-  width: 100%;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-}
-
 .d-flex {
   display: flex;
 }
@@ -64,12 +55,40 @@ a {
   overflow: hidden;
 }
 
-.uppercase {
-  text-transform: uppercase;
+.title {
+  font-size: 30px;
+  background-color: #fff;
+  padding: 30px 30px 33px 30px;
+  max-width: 1140px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+
+.text {
+  color: $grey;
+  line-height: 1.9;
+  font-size: 16px;
 }
 
 .text-blue {
   color: #0674ec;
+}
+
+.title-blue {
+  color: #0674ec;
+  margin-left: 14px;
+}
+
+.title-news {
+  font-size: 36px;
+  color: $black;
+  max-width: 675px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .btn {
@@ -80,6 +99,11 @@ a {
   &--blue {
     background-color: #0674ec;
     color: #ffffff;
+  }
+
+  &--violet {
+    background-color: #ffffff;
+    color: #7347c1;
   }
 
   &--white {

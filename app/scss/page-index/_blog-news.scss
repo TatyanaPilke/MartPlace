@@ -1,0 +1,44 @@
+.blog-news {
+  background-color: $bg-section;
+  padding: 115px 0 88px;
+
+  &__card {
+    max-height: 475px;
+  }
+
+  &__web {
+    font-size: 22px;
+  }
+
+  &__text {
+    line-height: 1.9;
+  }
+
+  &__time {
+    color: #999999;
+    font-size: 15px;
+    margin-left: 8px;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__btn {
+    color: #7e7e7e;
+
+    
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__comment {
+    margin-right: 7px;
+
+    
+    &:hover {
+      color: $blue;
+    }
+  }
+}

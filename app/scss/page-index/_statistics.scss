@@ -1,0 +1,61 @@
+.statistics {
+  background-color: #212225;
+
+  &__inner {
+    padding: 95px 0;
+  }
+
+  &__box {
+    max-width: 360px;
+    text-align: center;
+  }
+
+  &__icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 39px;
+
+    &--briefcase {
+      color: $figure-yellow;
+    }
+
+    &--download {
+      color: $figure-blue;
+    }
+
+    &--smile {
+      color: $figure-green;
+    }
+
+    &--users {
+      color: $figure-rose;
+    }
+  }
+
+  &__figure {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 14px;
+
+
+    &--yellow {
+      color: $figure-yellow;
+    }
+
+    &--blue {
+      color: $figure-blue;
+    }
+
+    &--green {
+      color: $figure-green;
+    }
+
+    &--rose {
+      color: $figure-rose;
+    }
+  }
+
+  &__sale {
+    color: $white;
+  }
+}

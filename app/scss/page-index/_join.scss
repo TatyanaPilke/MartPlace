@@ -1,0 +1,32 @@
+.join {
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0 125px;
+
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 36px;
+    color: $white;
+    max-width: 530px;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: $white;
+    margin: 22px 0 50px;
+  }
+
+  &__link {
+    padding: 18px 43px;
+    font-size: 16px;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $white;
+      color: $blue;
+    }
+  }
+}
