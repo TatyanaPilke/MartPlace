@@ -1,16 +1,42 @@
 .footer {
   background-color: $bg-footer;
-  padding: 115px 0 116px;
 
-  &__column-one {
-    max-width: 320px;
-    width: 100%;
-    margin-right: 20px;
-    padding-right: 50px;
+  &__inner {
+    padding: 115px 0 116px;
+  }
+
+  &__column {
+
+    &--one {
+      max-width: 320px;
+      width: 100%;
+      margin-right: 20px;
+      padding-right: 50px;
+    }
+
+    &--two {
+      width: 100%;
+      max-width: 225px;
+      margin-right: 20px;
+    }
+
+    &--three {
+      max-width: 175px;
+      width: 100%;
+      margin-right: 20px;
+    }
+
+    &__four {
+      max-width: 365px;
+    }
   }
 
   &__img {
-    margin-bottom: 24px;
+    margin: 0 0 24px 0;
+  }
+
+  &__logo {
+    margin: 0;
   }
 
   &__text {
@@ -46,7 +72,7 @@
     color: $footer-link;
     line-height: 1.9;
     font-style: normal;
-    
+
     &:hover {
       color: $white;
     }
@@ -63,12 +89,6 @@
   &__street {
     margin: 0 15px 0 2px;
   }
-  
-  &__column-two {
-    width: 100%;
-    max-width: 225px;
-    margin-right: 20px;
-  }
 
   &__column-title {
     letter-spacing: 1px;
@@ -77,7 +97,7 @@
     color: $white;
   }
 
-  &__info {
+  &__menu {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -86,6 +106,7 @@
 
   &__link {
     color: $footer-link;
+    transition: color 0.3s ease-in-out;
 
     &:hover {
       color: $white;
@@ -100,50 +121,60 @@
     margin-bottom: 15px;
   }
 
-  &__column-three {
-    max-width: 175px;
-    width: 100%;
-    margin-right: 20px;
-  }
-
   &__form {
-    margin: 33px 0 49px;
+    margin: 33px 0 61px;
+    position: relative;
   }
 
   &__input {
-    padding: 16px 120px 15px 30px;
-    position: relative;
+    padding: 15px 120px 15px 30px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    outline: transparent;
+    border: 1px solid #d9dfe5;
   }
 
   &__btn {
     padding: 16px 30px 17px 31px;
     position: absolute;
-    right: -1px;
+    right: -2px;
     font-size: 15px;
 
     &:focus {
       background-color: #225c9c;
       box-shadow: 0 0 5px 0 $blue;
     }
-    
+
     &:hover {
       background-color: #225c9c;
     }
-    
+
     &:active {
       box-shadow: inset 0 0 5px 0 $blue;
     }
   }
 
-    &__contact {
-    width: 42px;
-    height: 42px;
+  &__icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__contact {
+    margin-right: 8px;
+    display: inline-block;
+  }
+
+  &__icon {
     border-radius: 50%;
-    position: relative;
-    margin-right: 13px;
+    padding: 13px 14px;
+    color: $white;
+    font-size: 16px;
+    transition: color 0.5s ease-in-out;
 
     &--facebook {
       background-color: #395799;
+      padding: 13px 16px;
 
       &:hover {
         box-shadow: 1px 1px 10px 1px #395799;
@@ -154,13 +185,13 @@
       background-color: #19b2f5;
 
       &:hover {
-        box-shadow: 1px 1px 10px 1px  #19b2f5;
+        box-shadow: 1px 1px 10px 1px #19b2f5;
       }
     }
 
     &--google {
       background-color: #f05b44;
-      
+
       &:hover {
         box-shadow: 1px 1px 10px 1px #f05b44;
       }
@@ -168,15 +199,15 @@
 
     &--pinterest {
       background-color: #9c0c1c;
-      
+
       &:hover {
-        box-shadow: 1px 1px 10px 1px  #9c0c1c;
+        box-shadow: 1px 1px 10px 1px #9c0c1c;
       }
     }
 
     &--linkedin {
       background-color: #0da6be;
-      
+
       &:hover {
         box-shadow: 1px 1px 10px 1px #0da6be;
       }
@@ -184,35 +215,21 @@
 
     &--basketball {
       background-color: #ea4c89;
-      
+
       &:hover {
         box-shadow: 1px 1px 10px 1px #ea4c89;
       }
     }
   }
 
-  &__icon {
-    position: absolute;
-    top: 30%;
-    left: 33%;
-    font-size: 16px;
-    color: $white;
+  &__bottom {
+    background-color: #192027;
+    padding: 38px 0;
+    font-size: 15px;
+    text-align: center;
   }
 
-  &__icons {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-}
-
-.footer-bottom {
-  background-color: #192027;
-  padding: 38px 0;
-  font-size: 15px;
-  text-align: center;
-
-  &__text {
+  &__bottom-text {
     color: $white;
 
     &:hover {

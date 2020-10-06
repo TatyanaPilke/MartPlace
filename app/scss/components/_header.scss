@@ -1,13 +1,10 @@
 .header {
+  background-color: #eef1f3;
 
   &__inner {
     max-height: 99px;
     padding: 25px 0 25px;
-  }
-
-  &__logo {
-    margin-left: 7px;
-    outline: transparent;
+    position: relative;
   }
 
   &__seller {
@@ -19,34 +16,6 @@
     &:hover {
       box-shadow: inset 5px 4px 10px 5px rgba(63, 18, 185, 0.1);
     }
-  }
-
-  &__name {
-    display: block;
-    font-weight: 500;
-    color: $grey-light;
-    margin-left: 21px;
-
-    &:hover {
-      color: $red;
-    }
-  }
-
-  &__check {
-    color: $blue;
-    margin-left: 21px;
-    font-size: 15px;
-    line-height: 1.4;
-  }
-
-  &__foto {
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    margin-left: 48px;
   }
 
   &__badge {
@@ -92,6 +61,116 @@
   }
 
   &__top {
-    height: 79px;
+    min-height: 79px;
+  }
+
+  &__search {
+    margin: 0;
+    max-width: 360px;
+    width: 100%;
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 13px 70px 13px 24px;
+    border-radius: 30px;
+    border: none;
+    outline: transparent;
+    border: 1px solid #d9dfe5;
+    font-size: 15px;
+
+    &:focus {
+      border: 1px solid $border-hover;
+    }
+
+    &:hover {
+      border: 1px solid $border-hover;
+    }
+
+    &:active {
+      border: 1px solid $border-hover;
+    }
+
+    &::placeholder {
+      color: $border-hover;
+      font-size: 15px;
+    }
+  }
+
+  &__magnify {
+    position: absolute;
+    border: none;
+    padding: 0;
+    top: 0;
+    right: 0;
+    max-width: 70px;
+    width: 100%;
+    height: 45px;
+    background-image: url(../images/icons/magnifier.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: color 0.3s;
+
+    &:focus {
+      background-color: rgba(blue, 0.9);
+      box-shadow: 0 0 5px 0 rgba(blue, 0.8);
+    }
+
+    &:hover {
+      background-color: rgba(blue, 0.8);
+    }
+
+    &:active {
+      box-shadow: inset 0 0 5px 0 rgba(blue, 0.5);
+    }
+  }
+
+  &__menu {
+    background-color: $white;
+  }
+
+  &__hover {
+    
+    &::before {
+    content: " ";
+    position: absolute;
+    top: -10px;
+    right: 28px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 9px 8px;
+    border-color: transparent transparent #007bff transparent;
+    }
+  }
+
+  &__icon-hover {
+    margin-right: 15px;
+  }
+
+  &__message {
+    min-width: 370px;
+    background-color: $white;
+  }
+
+  &__message-info {
+    padding: 25px 25px 20px;
+    border-bottom: 1px solid #e8ebf0;
+  }
+
+  &__message-title {
+    font-size: 18px;
+    color: $black;
+  }
+
+  &__message-link {
+    font-size: 15px;
+  }
+
+  &__foto {
+    width: 40px;
+    height: 40px;
   }
 }

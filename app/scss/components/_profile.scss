@@ -1,0 +1,40 @@
+.profile {
+  margin-left: 48px;
+  outline: transparent;
+
+  &:hover+.header__hover {
+    top: 98px;
+    display: block;
+    right: 0;
+  }
+
+  &__client {
+    margin-left: 21px;
+  }
+
+  &__name {
+    margin-top: 4px;
+    font-weight: 500;
+    color: $grey-light;
+    display: block;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__check {
+    color: $blue;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  &__foto {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+}

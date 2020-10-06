@@ -1,9 +1,9 @@
-.blog-news {
+.news {
   background-color: $bg-section;
   padding: 115px 0 88px;
 
-  &__card {
-    max-height: 475px;
+  &__inner {
+    margin-top: 54px;
   }
 
   &__web {
@@ -12,6 +12,12 @@
 
   &__text {
     line-height: 1.9;
+    max-width: 675px;
+    margin: 20px auto;
+  }
+
+  &__price {
+    padding: 5px;
   }
 
   &__time {
@@ -19,26 +25,36 @@
     font-size: 15px;
     margin-left: 8px;
 
+    &:focus {
+      color: $blue;
+    }
+
     &:hover {
       color: $blue;
+    }
+
+    &:active {
+      color: $red;
     }
   }
 
   &__btn {
     color: #7e7e7e;
 
-    
+    &:focus {
+      color: $blue;
+    }
+
     &:hover {
       color: $blue;
+    }
+
+    &:active {
+      color: $red;
     }
   }
 
   &__comment {
     margin-right: 7px;
-
-    
-    &:hover {
-      color: $blue;
-    }
   }
 }

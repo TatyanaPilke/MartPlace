@@ -16,11 +16,11 @@
   <header class="header">
     <div class="wrapper">
       <div class="container">
-        <div class="header__inner d-flexbox d-jcsb">
-          <a class="header__logo" href="#">
-            <img class="header__img" src="images/logo.png" alt="logo">
+        <div class="header__inner d-flex f-jcsb f-aic">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="logo">
           </a>
-          <div class="header__box d-flexbox">
+          <div class="header__box d-flex f-aic">
             <a class=" btn btn--blue header__seller" href="#">
               Become a Seller
             </a>
@@ -33,55 +33,391 @@
                 <span class="lnr lnr-envelope header__badge"></span>
                 <span class="header__figure  header__figure--green">6</span>
               </a>
+              <!-- <div class="header__message">
+                <div class="header__message-info d-flex f-jcsb">
+                  <span class="header__message-title">
+                    My Messages
+                  </span>
+                  <a class="header__message-link text-blue" href="#">
+                    View All
+                  </a>
+                </div>
+                <div class="header__message-info d-flex f-jcsb">
+                <a class="profile header__profile d-flex" href="#">
+                  <span class="profile__foto header__foto" style="background-image: url(images/face.jpg);"></span>
+                  <div class="profile__client header__client">
+                    <span class="profile__name header__name">Washim</span>
+                    <p class="profile__check header__check">Hello John Smith! Nunc placerat id...</p>
+                  </div>
+                </a>
+              </div>
+              </div> -->
               <a class="header__alerts" href="#">
                 <span class="lnr lnr-cart header__badge"></span>
                 <span class="header__figure  header__figure--blue">2</span>
               </a>
             </div>
-            <a class="header__link" href="#">
-              <span class="header__foto" style="background-image: url(images/face.jpg);"></span>
+            <a class="profile d-flex" href="#">
+              <span class="profile__foto" style="background-image: url(images/face.jpg);"></span>
+              <div class="profile__client">
+                <span class="profile__name">Taofiq Hakim</span>
+                <span class="profile__check">$20.45</span>
+              </div>
             </a>
-            <a href="#">
-              <span class="header__name">Taofiq Hakim</span>
-              <span class="header__check">$20.45</span>
-            </a>
+            <div class="menu-hover header__hover">
+              <ul class="menu-hover__item">
+                <li class="menu-hover__list header__list">
+
+                  <a class="menu-hover__link header__link" href="#"><span
+                      class="lnr lnr-user header__icon-hover"></span>Profile Page</a>
+                </li>
+                <li class="menu-hover__list">
+                  <a class="menu-hover__link" href="#"><span
+                      class="lnr lnr-home header__icon-hover"></span>Dashboard</a>
+                </li>
+                <li class="menu-hover__list">
+                  <a class="menu-hover__link" href="#"><span class="lnr lnr-cog header__icon-hover"></span>Account
+                    Settings</a>
+                </li>
+                <li class="menu-hover__list">
+                  <a class="menu-hover__link" href="#"> <span class="lnr lnr-cart header__icon-hover"></span>Your
+                    Purchases</a>
+                </li>
+                <li class="menu-hover__list">
+                  <a class="menu-hover__link" href="#"><span class="lnr lnr-heart header__icon-hover"></span>Your
+                    Favorites</a>
+                </li>
+                <li class="menu-hover__list">
+                  <a class="menu-hover__link" href="#"> <span class="lnr lnr-dice header__icon-hover"></span>Add
+                    Credits</a>
+                </li>
+                <li class="menu-hover__list">
+                  <a class="menu-hover__link" href="#"> <span class="lnr lnr-chart-bars header__icon-hover"></span>Sales
+                    Statements</a>
+                </li>
+                <li class="menu-hover__list">
+                  <a class="menu-hover__link" href="#"> <span class="lnr lnr-upload header__icon-hover"></span>Upload
+                    Item</a>
+                </li>
+                <li class="menu-hover__list">
+                  <a class="menu-hover__link" href="#"><span class="lnr lnr-book header__icon-hover"></span>Edit
+                    Item</a>
+                </li>
+                <li class="menu-hover__list">
+                  <a class="menu-hover__link" href="#"> <span
+                      class="lnr lnr-briefcase header__icon-hover"></span>Withdrawals</a>
+                </li>
+                <li class="menu-hover__list">
+                  <a class="menu-hover__link" href="#"><span class="lnr lnr-exit header__icon-hover"></span>Logout</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
 
     <!-- Menu start-->
 
     <div class="header__menu">
       <div class="container">
-        <div class="header__top d-flexbox d-jcsb">
+        <div class="header__top d-flex f-aic f-jcsb">
           <nav class="menu">
             <ul class="menu__nav">
               <li class="menu__list">
                 <a class="menu__link" href="#">Home</a>
               </li>
-              <li class="menu__list">
+              <div class="menu-hover">
+                <ul class="menu-hover__item">
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Home One Multi User</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Home Two Single User</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Home Three Product</a>
+                  </li>
+                </ul>
+              </div>
+              <li class="menu__list menu__list--products">
                 <a class="menu__link" href="#">All products</a>
               </li>
-              <li class="menu__list">
+              <div class="menu-hover">
+                <ul class="menu-hover__item">
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Recent Items</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Popular Items</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Featured Items</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Free Templates</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Follow Feed</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Top Authors</a>
+                  </li>
+                </ul>
+              </div>
+              <li class="menu__list menu__list--category">
                 <a class="menu__link" href="#">Wordpress</a>
               </li>
+              <div class="menu-hover">
+                <ul class="menu-hover__item">
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Popular Items</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Admin Templates</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Blog / Magazine / News</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Creative</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Corporate Business</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Resume Portfolio</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">eCommerce</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Entertainment</a>
+                  </li>
+                  <li class="menu-hover__list">
+                    <a class="menu-hover__link" href="#">Landing Pages</a>
+                  </li>
+                </ul>
+              </div>
               <li class="menu__list">
                 <a class="menu__link" href="#">Festures</a>
               </li>
               <li class="menu__list">
                 <a class="menu__link" href="#">Pages</a>
               </li>
+              <div class="menu-hover menu-hover--pages">
+                <div class="menu-hover__box">
+                  <div class="menu-hover__title">
+                    MartPlace Pages
+                  </div>
+                  <div class="menu-hover__category d-flex">
+                    <ul class="menu-hover__item menu-hover__item--column-1">
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Home Page One</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Home Page Two</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Home Page Three</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Products Grid</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Products List</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Category Grid Sidebar</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Category List Sidebar</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Search Product</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Single Product V-1</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Single Product V-2</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Single Product V-3</a>
+                      </li>
+                    </ul>
+                    <ul class="menu-hover__item menu-hover__item--column-2">
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Single Items Comments</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Single Items Reviews</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Single Items Support</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Single Items FAQs</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Favorites Items</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Author Profile</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Author Items</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Customer Reviews</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Followers</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Following</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Product View Variations</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="menu-hover__box">
+                  <div class="menu-hover__title">
+                    Dashboard
+                  </div>
+                  <div class="menu-hover__category">
+                    <ul class="menu-hover__item menu-hover__item--column-3">
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Dashboard</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Account Settings</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Author Purchases</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Items Rating</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Add Credits</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Statements</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Invoice</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Upload Item</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Edit Items</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Withdrawals</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link  menu-hover__link--page" href="#">Add Payment Method</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="menu-hover__box">
+                  <div class="menu-hover__title">
+                    Others Pages
+                  </div>
+                  <div class="menu-hover__category d-flex">
+                    <ul class="menu-hover__item menu-hover__item--column-4">
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Notifications</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Message Inbox</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Message Compose</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Shopping Cart</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Checkout</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Login</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Register</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Recovery Password</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Support Forum</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Forum Details</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">How It Works</a>
+                      </li>
+                    </ul>
+                    <ul class="menu-hover__item menu-hover__item--column-5">
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#"> About Us</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Pricing Plan</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Testimonials</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">FAQs</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">FAQs Details</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Affiliates</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Terms & Conditions</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Blog V-1</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Blog V-2</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Blog Details</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Contact Us</a>
+                      </li>
+                      <li class="menu-hover__list">
+                        <a class="menu-hover__link menu-hover__link--page" href="#">Menu & Footer Variation</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </ul>
           </nav>
 
-          <form class="search" action="#">
-            <label class="search__product">
+
+          <form class="header__search" action="#">
+            <label class="header__label">
               <span class="hidden">Search product here</span>
-              <input class="search__input" type="search" name="search" placeholder="Search product here..." required>
+              <input class="header__input" type="search" name="search" placeholder="Search product here..." required>
             </label>
-            <button class="btn btn--blue search__magnify" type="submit"><span class="hidden">Search</span></button>
+            <button class="btn btn--blue header__magnify" type="submit"><span class="hidden">Search</span></button>
           </form>
         </div>
       </div>
@@ -112,20 +448,17 @@
         </div>
 
         <div class="form-categories">
-          <div class="form-categories__search">
-            <form class="form-categories__products" action="#" method="post">
-              <label class="form-categories__box">
-                <span class="hidden">Search your products</span>
-                <input class="form-categories__input" type="search" name="search" placeholder="Search your products..."
-                  required>
-              </label>
-              <select class="form-categories__select" name="categories"
-                style="background-image: url(images/icons/chevron-down.svg);">
-                <option selected value="All Categories">All Categories</option>
-              </select>
-              <button class="btn--blue form-categories__btn" type="submit">Search Now</button>
-            </form>
-          </div>
+          <form class="form-categories__products" action="#" method="post">
+            <label class="form-categories__box">
+              <span class="hidden">Search your products</span>
+              <input class="form-categories__input" type="search" name="search" placeholder="Search your products..."
+                required>
+            </label>
+            <select class="form-categories__select" name="categories">
+              <option selected value="All Categories">All Categories</option>
+            </select>
+            <button class="btn btn--blue form-categories__btn" type="submit">Search Now</button>
+          </form>
         </div>
       </div>
     </section>
@@ -135,8 +468,7 @@
     <section class="about">
       <div class="container">
         <div class="about__inner d-flex">
-          <div class="about-info">
-            <img class="about-info__img" src="images/icon01.png" alt="#">
+          <div class="about-info" style="background-image: url(images/icon01.png);">
             <div class="about-info__title">
               Best UX Research
             </div>
@@ -147,8 +479,7 @@
             </p>
           </div>
 
-          <div class="about-info">
-            <img class="about-info__img" src="images/icon02.png" alt="#">
+          <div class="about-info" style="background-image: url(images/icon02.png);">
             <div class="about-info__title">
               Fully Responsive
             </div>
@@ -159,8 +490,7 @@
             </p>
           </div>
 
-          <div class="about-info">
-            <img class="about-info__img" src="images/icon03.png" alt="#">
+          <div class="about-info" style="background-image: url(images/icon03.png);">
             <div class="about-info__title">
               Buy & Sell Easily
             </div>
@@ -178,154 +508,154 @@
 
     <section class="featured">
       <div class="container">
-        <div class="featured__title title d-flexbox d-jcsb">
+        <div class="title d-flex f-jcsb f-aic">
           Weekly Featured Products
           <div class="arrows-wrap"></div>
         </div>
 
         <div class="featured__inner">
 
-          <article class="product-card featured-card">
-            <img class="product-card__img featured-card__img" src="images/slider-1.jpg" alt="#">
-            <div class="product-card__resume featured-card__resume">
-              <div class="product-card__title featured-card__title">
+          <article class="product-card featured__card">
+            <img class="product-card__img featured__img" src="images/slider-1.jpg" alt="#">
+            <div class="product-card__resume featured__resume">
+              <div class="product-card__title featured__title">
                 One Page Resume Template
               </div>
-              <div class="product-card__profile d-flexbox">
-                <a class="product-card__link d-flexbox" href="#">
-                  <img class="product-card__foto featured-card__foto" src="images/face.jpg" alt="#">
-                  <span class="product-card__name">
-                    AazzTech
-                  </span>
+              <div class="product-card__box d-flex f-aic">
+                <a class="profile featured__profile d-flex f-aic" href="#">
+                  <span class="profile__foto featured__foto" style="background-image: url(images/face.jpg);"></span>
+                  <span class="profile__name featured__name">AazzTech</span>
                 </a>
-                <a class="product-card__word" style="background-image: url(images/icons/wordpress.png);">
-                  <span class="product-card__wordpress">
+                <a class="product-card__category" style="background-image: url(images/icons/wordpress.png);">
+                  <span class="product-card__category-text">
                     WordPress
                   </span>
                 </a>
               </div>
-              <p class="product-card__text featured-card__text text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet congue justo ut scelerisque.
-              </p>
-              <div class="featured-card__use">
-                <a class=" btn btn--grey featured-card__tag" href="#">website</a>
-                <a class=" btn btn--grey featured-card__tag" href="#">plugin</a>
-                <a class=" btn btn--grey featured-card__tag" href="#">landing page</a>
-
+              <div class="featured__simplebar" data-simplebar id="my-simplebar">
+                <p class="product-card__text featured__text text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                  aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                  mattis,
+                  leo quam aliquet congue justo ut scelerisque.
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                  aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                  mattis,
+                  leo quam aliquet congue justo ut scelerisque.
+                </p>
               </div>
-              <div class="product-card__price-box d-flex d-jcsb featured-card__price-box">
-                <div class="product-card__price featured-card__price">
-                  <span class="btn btn--blue product-card__cost featured-card__cost">
+              <div class="featured__use">
+                <a class=" btn btn--grey featured__tag" href="#">website</a>
+                <a class=" btn btn--grey featured__tag" href="#">plugin</a>
+                <a class=" btn btn--grey featured__tag" href="#">landing page</a>
+              </div>
+              <div class="product-card__price-box d-flex f-jcsb featured__price-box">
+                <div class="product-card__price featured__price">
+                  <span class="btn btn--blue product-card__cost featured__cost">
                     $10 - $50
                   </span>
-                  <button class="product-card__btn featured-card__btn" type="button">
-                    <span class="lnr lnr-heart product-card__heart featured-card__heart"></span>
+                  <button class="product-card__btn featured__btn" type="button">
+                    <span class="lnr lnr-heart product-card__heart featured__heart"></span>
                     46
                   </button>
-                  <button class="product-card__btn featured-card__btn text-blue" type="button">
-                    <span class="lnr lnr-cart product-card__cart featured-card__cart"></span>
+                  <button class="product-card__btn featured__btn text-blue" type="button">
+                    <span class="lnr lnr-cart product-card__cart featured__cart"></span>
                     634
                   </button>
                 </div>
-                <div class="product-card__stars featured-card__stars"></div>
+                <div class="product-card__stars featured__stars"></div>
               </div>
             </div>
           </article>
 
-          <article class="product-card featured-card">
-            <img class="product-card__img featured-card__img" src="images/slider-2.jpg" alt="#">
-            <div class="product-card__resume featured-card__resume">
-              <div class="product-card__title featured-card__title">
+          <article class="product-card featured__card">
+            <img class="product-card__img featured__img" src="images/slider-2.jpg" alt="#">
+            <div class="product-card__resume featured__resume">
+              <div class="product-card__title featured__title">
                 One Page Resume Template
               </div>
-              <div class="product-card__profile d-flexbox">
-                <a class="product-card__link d-flexbox" href="#">
-                  <img class="product-card__foto featured-card__foto" src="images/face.jpg" alt="#">
-                  <span class="product-card__name">
-                    AazzTech
-                  </span>
+              <div class="product-card__box d-flex f-aic">
+                <a class="profile featured__profile d-flex f-aic" href="#">
+                  <span class="profile__foto featured__foto" style="background-image: url(images/face.jpg);"></span>
+                  <span class="profile__name featured__name"> AazzTech</span>
                 </a>
-                <a class="product-card__word" style="background-image: url(images/icons/wordpress.png);">
-                  <span class="product-card__wordpress">
+                <a class="product-card__category" style="background-image: url(images/icons/wordpress.png);">
+                  <span class="product-card__category-text">
                     WordPress
                   </span>
                 </a>
               </div>
-              <p class="product-card__text featured-card__text text">
+              <p class="product-card__text featured__text text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
                 leo quam aliquet congue justo ut scelerisque.
               </p>
-              <div class="featured-card__use">
-                <a class=" btn btn--grey featured-card__tag" href="#">website</a>
-                <a class=" btn btn--grey featured-card__tag" href="#">plugin</a>
-                <a class=" btn btn--grey featured-card__tag" href="#">landing page</a>
+              <div class="featured__use">
+                <a class=" btn btn--grey featured__tag" href="#">website</a>
+                <a class=" btn btn--grey featured__tag" href="#">plugin</a>
+                <a class=" btn btn--grey featured__tag" href="#">landing page</a>
               </div>
-              <div class="product-card__price-box d-flex d-jcsb featured-card__price-box">
-                <div class="product-card__price featured-card__price">
-                  <span class="btn btn--blue product-card__cost featured-card__cost">
+              <div class="product-card__price-box d-flex f-jcsb featured__price-box">
+                <div class="product-card__price featured__price">
+                  <span class="btn btn--blue product-card__cost featured__cost">
                     $10 - $50
                   </span>
-                  <button class="product-card__btn featured-card__btn" type="button">
-                    <span class="lnr lnr-heart product-card__heart featured-card__heart"></span>
+                  <button class="product-card__btn featured__btn" type="button">
+                    <span class="lnr lnr-heart product-card__heart featured__heart"></span>
                     46
                   </button>
-                  <button class="product-card__btn featured-card__btn text-blue" type="button">
-                    <span class="lnr lnr-cart product-card__cart featured-card__cart"></span>
+                  <button class="product-card__btn featured__btn text-blue" type="button">
+                    <span class="lnr lnr-cart product-card__cart featured__cart"></span>
                     634
                   </button>
                 </div>
-                <div class="product-card__stars featured-card__stars"></div>
+                <div class="product-card__stars featured__stars"></div>
               </div>
             </div>
           </article>
 
-          <article class="product-card featured-card">
-            <img class="product-card__img featured-card__img" src="images/slider-3.jpg" alt="#">
-            <div class="product-card__resume featured-card__resume">
-              <div class="product-card__title featured-card__title">
+          <article class="product-card featured__card">
+            <img class="product-card__img featured__img" src="images/slider-3.jpg" alt="#">
+            <div class="product-card__resume featured__resume">
+              <div class="product-card__title featured__title">
                 One Page Resume Template
               </div>
-              <div class="product-card__profile d-flexbox">
-                <a class="product-card__link d-flexbox" href="#">
-                  <img class="product-card__foto featured-card__foto" src="images/face.jpg" alt="#">
-                  <span class="product-card__name">
-                    AazzTech
-                  </span>
+              <div class="product-card__box d-flex f-aic">
+                <a class="profile featured__profile d-flex f-aic" href="#">
+                  <span class="profile__foto featured__foto" style="background-image: url(images/face.jpg);"></span>
+                  <span class="profile__name featured__name"> AazzTech</span>
                 </a>
-                <a class="product-card__word" style="background-image: url(images/icons/wordpress.png);">
-                  <span class="product-card__wordpress">
+                <a class="product-card__category" style="background-image: url(images/icons/wordpress.png);">
+                  <span class="product-card__category-text">
                     WordPress
                   </span>
                 </a>
               </div>
-              <p class="product-card__text featured-card__text text">
+              <p class="product-card__text featured__text text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
                 leo quam aliquet congue justo ut scelerisque.
               </p>
-              <div class="featured-card__use">
-                <a class=" btn btn--grey featured-card__tag" href="#">website</a>
-                <a class=" btn btn--grey featured-card__tag" href="#">plugin</a>
-                <a class=" btn btn--grey featured-card__tag" href="#">landing page</a>
+              <div class="featured__use">
+                <a class=" btn btn--grey featured__tag" href="#">website</a>
+                <a class=" btn btn--grey featured__tag" href="#">plugin</a>
+                <a class=" btn btn--grey featured__tag" href="#">landing page</a>
               </div>
-              <div class="product-card__price-box d-flex d-jcsb featured-card__price-box">
-                <div class="product-card__price featured-card__price">
-                  <span class="btn btn--blue product-card__cost featured-card__cost">
+              <div class="product-card__price-box d-flex f-jcsb featured__price-box">
+                <div class="product-card__price featured__price">
+                  <span class="btn btn--blue product-card__cost featured__cost">
                     $10 - $50
                   </span>
-                  <button class="product-card__btn featured-card__btn" type="button">
-                    <span class="lnr lnr-heart product-card__heart featured-card__heart"></span>
+                  <button class="product-card__btn featured__btn" type="button">
+                    <span class="lnr lnr-heart product-card__heart featured__heart"></span>
                     46
                   </button>
-                  <button class="product-card__btn featured-card__btn text-blue" type="button">
-                    <span class="lnr lnr-cart product-card__cart featured-card__cart"></span>
+                  <button class="product-card__btn featured__btn text-blue" type="button">
+                    <span class="lnr lnr-cart product-card__cart featured__cart"></span>
                     634
                   </button>
                 </div>
-                <div class="product-card__stars featured-card__stars"></div>
+                <div class="product-card__stars featured__stars"></div>
               </div>
             </div>
           </article>
@@ -337,7 +667,7 @@
 
     <section class="new-products">
       <div class="container">
-        <div class="new-products__title title">
+        <div class="title new-products__title ">
           Newest Release Products
           <a class="new-products__filter" href="#">
             Filter by:
@@ -360,9 +690,8 @@
             </li>
           </ul>
         </div>
-        <div class="new-products__category">
-          <button class="btn new-products__btn new-products__btn--active" type="button"
-            data-filter=".category-plugin">Plugins</button>
+        <div class="new-products__category title">
+          <button class="btn btn--grey new-products__btn" type="button" data-filter=".category-plugin">Plugins</button>
           <button class="btn btn--grey new-products__btn" type="button"
             data-filter=".category-wordpress">WordPress</button>
           <button class="btn btn--grey new-products__btn" type="button"
@@ -380,25 +709,23 @@
         <div class="new-products__inner">
           <article class="product-card mix category-plugin category-wordpress category-joomla" data-order="1">
             <img class="product-card__img" src="images/slider-2.jpg" alt="#">
-            <div class="product-card__link-hover" style="background-image: url(images/bg-product.jpg);">
-              <div class="product-card__info">
-                <a class="btn btn--transparent product-card__more" href="#">More Info</a>
-                <a class="btn btn--white product-card__more" href="#">Live Demo</a>
-              </div>
+            <div class="product-card__hover"></div>
+            <div class="product-card__link-info">
+              <a class="product-card__link-hover btn btn--transparent" href="#">More Info</a>
+              <a class="product-card__link-hover btn btn--transparent" href="#">Live Demo</a>
             </div>
+
             <div class="product-card__resume">
               <div class="product-card__title">
                 E-commerce Shopping Cart
               </div>
-              <div class="product-card__profile d-flexbox">
-                <a class="product-card__link d-flexbox" href="#">
-                  <img class="product-card__foto" src="images/face.jpg" alt="#">
-                  <span class="product-card__name">
-                    Theme-Valley
-                  </span>
+              <div class="product-card__box d-flex f-aic ">
+                <a class="profile product-card__profile d-flex f-aic" href="#">
+                  <span class="profile__foto product-card__foto" style="background-image: url(images/face.jpg);"></span>
+                  <span class="profile__name product-card__name">Theme-Valley</span>
                 </a>
-                <a class="product-card__word" style="background-image: url(images/icons/wordpress.png);">
-                  <span class="product-card__wordpress">
+                <a class="product-card__category" style="background-image: url(images/icons/wordpress.png);">
+                  <span class="product-card__category-text">
                     Plugin
                   </span>
                 </a>
@@ -408,7 +735,7 @@
                 the mattis, leo quam aliquet congue.
               </p>
             </div>
-            <div class="product-card__price-box d-flexbox d-jcsb">
+            <div class="product-card__price-box d-flex f-aic f-jcsb">
               <div class="product-card__price d-flex">
                 <span class="product-card__cost">
                   $20
@@ -417,6 +744,7 @@
                   <span class="lnr lnr-heart product-card__heart"></span>
                   90
                 </button>
+                <div class="product-card__stars"></div>
               </div>
               <button class="product-card__btn text-blue" type="button">
                 <span class="lnr lnr-cart product-card__cart"></span>
@@ -427,26 +755,18 @@
           </article>
 
           <article class="product-card mix category-plugin category-psd" data-order="2">
-            <img class="product-card__img" src="images/slider-2.jpg" alt="#">
-            <div class="product-card__link-hover" style="background-image: url(images/bg-product.jpg);">
-              <div class="product-card__info">
-                <a class="btn btn--transparent product-card__more" href="#">More Info</a>
-                <a class="btn btn--white product-card__more" href="#">Live Demo</a>
-              </div>
-            </div>
+            <img class="product-card__img" src="images/slider-1.jpg" alt="#">
             <div class="product-card__resume">
               <div class="product-card__title">
                 Marketify Coffee Shop
               </div>
-              <div class="product-card__profile d-flexbox">
-                <a class="product-card__link d-flexbox" href="#">
-                  <img class="product-card__foto" src="images/face.jpg" alt="#">
-                  <span class="product-card__name">
-                    EchoTheme
-                  </span>
+              <div class="product-card__box d-flex f-aic">
+                <a class="profile product-card__profile d-flex f-aic" href="#">
+                  <span class="profile__foto product-card__foto" style="background-image: url(images/face.jpg);"></span>
+                  <span class="profile__name product-card__name">EchoTheme</span>
                 </a>
-                <a class="product-card__word" style="background-image: url(images/icons/ps.png);">
-                  <span class="product-card__wordpress uppercase">
+                <a class="product-card__category" style="background-image: url(images/icons/ps.png);">
+                  <span class="product-card__category-text uppercase">
                     Psd
                   </span>
                 </a>
@@ -456,7 +776,7 @@
                 the mattis, leo quam aliquet congue.
               </p>
             </div>
-            <div class="product-card__price-box d-flexbox d-jcsb">
+            <div class="product-card__price-box d-flex f-aic f-jcsb">
               <div class="product-card__price d-flex">
                 <span class="product-card__cost">
                   $18
@@ -465,6 +785,7 @@
                   <span class="lnr lnr-heart product-card__heart"></span>
                   48
                 </button>
+                <div class="product-card__stars"></div>
               </div>
               <button class="product-card__btn text-blue" type="button">
                 <span class="lnr lnr-cart product-card__cart"></span>
@@ -474,26 +795,18 @@
           </article>
 
           <article class="product-card mix category-plugin category-wordpress category-joomla" data-order="3">
-            <img class="product-card__img" src="images/slider-2.jpg" alt="#">
-            <div class="product-card__link-hover" style="background-image: url(images/bg-product.jpg);">
-              <div class="product-card__info">
-                <a class="btn btn--transparent product-card__more" href="#">More Info</a>
-                <a class="btn btn--white product-card__more" href="#">Live Demo</a>
-              </div>
-            </div>
+            <img class="product-card__img" src="images/slider-3.jpg" alt="#">
             <div class="product-card__resume">
               <div class="product-card__title">
                 Bryson - Portfolio Template
               </div>
-              <div class="product-card__profile d-flexbox">
-                <a class="product-card__link d-flexbox" href="#">
-                  <img class="product-card__foto" src="images/face.jpg" alt="#">
-                  <span class="product-card__name">
-                    Artcorner
-                  </span>
+              <div class="product-card__box d-flex f-aic">
+                <a class="profile product-card__profile d-flex f-aic" href="#">
+                  <span class="profile__foto product-card__foto" style="background-image: url(images/face.jpg);"></span>
+                  <span class="profile__name product-card__name">Artcorner</span>
                 </a>
-                <a class="product-card__word" style="background-image: url(images/icons/html.png);">
-                  <span class="product-card__wordpress uppercase">
+                <a class="product-card__category" style="background-image: url(images/icons/html.png);">
+                  <span class="product-card__category-text uppercase">
                     Html
                   </span>
                 </a>
@@ -503,7 +816,7 @@
                 the mattis, leo quam aliquet congue.
               </p>
             </div>
-            <div class="product-card__price-box d-flexbox d-jcsb">
+            <div class="product-card__price-box d-flex f-aic f-jcsb">
               <div class="product-card__price d-flex">
                 <span class="product-card__cost">
                   $10
@@ -522,26 +835,18 @@
           </article>
 
           <article class="product-card mix category-plugin category-wordpress category-joomla" data-order="4">
-            <img class="product-card__img" src="images/slider-2.jpg" alt="#">
-            <div class="product-card__link-hover" style="background-image: url(images/bg-product.jpg);">
-              <div class="product-card__info">
-                <a class="btn btn--transparent product-card__more" href="#">More Info</a>
-                <a class="btn btn--white product-card__more" href="#">Live Demo</a>
-              </div>
-            </div>
+            <img class="product-card__img" src="images/slider-1.jpg" alt="#">
             <div class="product-card__resume">
               <div class="product-card__title">
                 E-commerce Shopping Cart
               </div>
-              <div class="product-card__profile d-flexbox">
-                <a class="product-card__link d-flexbox" href="#">
-                  <img class="product-card__foto" src="images/face.jpg" alt="#">
-                  <span class="product-card__name">
-                    Design-Hub
-                  </span>
+              <div class="product-card__box d-flex f-aic">
+                <a class="profile product-card__profile d-flex f-aic" href="#">
+                  <span class="profile__foto product-card__foto" style="background-image: url(images/face.jpg);"></span>
+                  <span class="profile__name product-card__name">Design-Hub</span>
                 </a>
-                <a class="product-card__word" style="background-image: url(images/icons/wordpress.png);">
-                  <span class="product-card__wordpress">
+                <a class="product-card__category" style="background-image: url(images/icons/wordpress.png);">
+                  <span class="product-card__category-text">
                     Plugin
                   </span>
                 </a>
@@ -551,7 +856,7 @@
                 the mattis, leo quam aliquet congue.
               </p>
             </div>
-            <div class="product-card__price-box d-flexbox d-jcsb">
+            <div class="product-card__price-box d-flex f-aic f-jcsb">
               <div class="product-card__price d-flex">
                 <span class="product-card__cost">
                   $10 - 50
@@ -571,25 +876,17 @@
 
           <article class="product-card mix category-plugin category-psd" data-order="5">
             <img class="product-card__img" src="images/slider-2.jpg" alt="#">
-            <div class="product-card__link-hover" style="background-image: url(images/bg-product.jpg);">
-              <div class="product-card__info">
-                <a class="btn btn--transparent product-card__more" href="#">More Info</a>
-                <a class="btn btn--white product-card__more" href="#">Live Demo</a>
-              </div>
-            </div>
             <div class="product-card__resume">
               <div class="product-card__title">
                 Marketify Coffee Shop
               </div>
-              <div class="product-card__profile d-flexbox">
-                <a class="product-card__link d-flexbox" href="#">
-                  <img class="product-card__foto" src="images/face.jpg" alt="#">
-                  <span class="product-card__name">
-                    AazzTech
-                  </span>
+              <div class="product-card__box d-flex f-aic">
+                <a class="profile product-card__profile d-flex f-aic" href="#">
+                  <span class="profile__foto product-card__foto" style="background-image: url(images/face.jpg);"></span>
+                  <span class="profile__name product-card__name">AazzTech</span>
                 </a>
-                <a class="product-card__word" style="background-image: url(images/icons/ps.png);">
-                  <span class="product-card__wordpress uppercase">
+                <a class="product-card__category" style="background-image: url(images/icons/ps.png);">
+                  <span class="product-card__category-text uppercase">
                     Psd
                   </span>
                 </a>
@@ -599,7 +896,7 @@
                 the mattis, leo quam aliquet congue.
               </p>
             </div>
-            <div class="product-card__price-box d-flexbox d-jcsb">
+            <div class="product-card__price-box d-flex f-aic f-jcsb">
               <div class="product-card__price d-flex">
                 <span class="product-card__cost">
                   $10 - 50
@@ -608,6 +905,7 @@
                   <span class="lnr lnr-heart product-card__heart"></span>
                   48
                 </button>
+                <div class="product-card__stars"></div>
               </div>
               <button class="product-card__btn text-blue" type="button">
                 <span class="lnr lnr-cart product-card__cart"></span>
@@ -617,26 +915,18 @@
           </article>
 
           <article class="product-card mix category-plugin category-joomla category-psd" data-order="6">
-            <img class="product-card__img" src="images/slider-2.jpg" alt="#">
-            <div class="product-card__link-hover" style="background-image: url(images/bg-product.jpg);">
-              <div class="product-card__info">
-                <a class="btn btn--transparent product-card__more" href="#">More Info</a>
-                <a class="btn btn--white product-card__more" href="#">Live Demo</a>
-              </div>
-            </div>
+            <img class="product-card__img" src="images/slider-3.jpg" alt="#">
             <div class="product-card__resume">
               <div class="product-card__title">
                 Bryson - Portfolio Template
               </div>
-              <div class="product-card__profile d-flexbox">
-                <a class="product-card__link d-flexbox" href="#">
-                  <img class="product-card__foto" src="images/face.jpg" alt="#">
-                  <span class="product-card__name">
-                    Coder-Lab
-                  </span>
+              <div class="product-card__box d-flex f-aic">
+                <a class="profile product-card__profile d-flex f-aic" href="#">
+                  <span class="profile__foto product-card__foto" style="background-image: url(images/face.jpg);"></span>
+                  <span class="profile__name product-card__name">Coder-Lab</span>
                 </a>
-                <a class="product-card__word" style="background-image: url(images/icons/html.png);">
-                  <span class="product-card__wordpress uppercase">
+                <a class="product-card__category" style="background-image: url(images/icons/html.png);">
+                  <span class="product-card__category-text uppercase">
                     Html
                   </span>
                 </a>
@@ -646,7 +936,7 @@
                 the mattis, leo quam aliquet congue.
               </p>
             </div>
-            <div class="product-card__price-box d-flexbox d-jcsb">
+            <div class="product-card__price-box d-flex f-aic f-jcsb">
               <div class="product-card__price d-flex">
                 <span class="product-card__cost">
                   $10
@@ -674,33 +964,25 @@
 
     <section class="followers">
       <div class="container">
-        <div class="followers__title title d-flexbox d-jcsb">
+        <div class="followers__title title d-flex f-aic f-jcsb">
           Your Followers Feed
           <div class="arrows-followers"></div>
         </div>
         <div class="followers__inner d-flex">
           <div class="followers__box">
-            <article class="product-card followers-card">
+            <article class="product-card followers__card">
               <img class="product-card__img" src="images/slider-2.jpg" alt="#">
-              <div class="product-card__link-hover" style="background-image: url(images/bg-product.jpg);">
-                <div class="product-card__info">
-                  <a class="btn btn--transparent product-card__more" href="#">More Info</a>
-                  <a class="btn btn--white product-card__more" href="#">Live Demo</a>
-                </div>
-              </div>
-              <div class="product-card__resume followers__resume">
+              <div class="product-card__resume">
                 <div class="product-card__title">
                   E-commerce Shopping Cart
                 </div>
-                <div class="product-card__profile d-flexbox">
-                  <a class="product-card__link d-flexbox" href="#">
-                    <img class="product-card__foto" src="images/face.jpg" alt="#">
-                    <span class="product-card__name">
-                      Theme-Valley
-                    </span>
+                <div class="product-card__box d-flex f-aic">
+                  <a class="profile followers__profile d-flex f-aic" href="#">
+                    <span class="profile__foto followers__foto" style="background-image: url(images/face.jpg);"></span>
+                    <span class="profile__name followers__name">Theme-Valley</span>
                   </a>
-                  <a class="product-card__word" style="background-image: url(images/icons/wordpress.png);">
-                    <span class="product-card__wordpress">
+                  <a class="product-card__category" style="background-image: url(images/icons/wordpress.png);">
+                    <span class="product-card__category-text">
                       Plugin
                     </span>
                   </a>
@@ -710,7 +992,7 @@
                   the mattis, leo quam aliquet congue.
                 </p>
               </div>
-              <div class="product-card__price-box d-flexbox d-jcsb">
+              <div class="product-card__price-box d-flex f-aic f-jcsb">
                 <div class="product-card__price d-flex">
                   <span class="product-card__cost">
                     $10
@@ -728,27 +1010,19 @@
               </div>
             </article>
 
-            <article class="product-card followers-card">
+            <article class="product-card followers__card">
               <img class="product-card__img" src="images/slider-2.jpg" alt="#">
-              <div class="product-card__link-hover" style="background-image: url(images/bg-product.jpg);">
-                <div class="product-card__info">
-                  <a class="btn btn--transparent product-card__more" href="#">More Info</a>
-                  <a class="btn btn--white product-card__more" href="#">Live Demo</a>
-                </div>
-              </div>
               <div class="product-card__resume">
                 <div class="product-card__title">
                   Marketify Coffee Shop
                 </div>
-                <div class="product-card__profile d-flexbox">
-                  <a class="product-card__link d-flexbox" href="#">
-                    <img class="product-card__foto" src="images/face.jpg" alt="#">
-                    <span class="product-card__name">
-                      EchoTheme
-                    </span>
+                <div class="product-card__box d-flex f-aic">
+                  <a class="profile followers__profile d-flex f-aic" href="#">
+                    <span class="profile__foto followers__foto" style="background-image: url(images/face.jpg);"></span>
+                    <span class="profile__name followers__name">EchoTheme</span>
                   </a>
-                  <a class="product-card__word" style="background-image: url(images/icons/ps.png);">
-                    <span class="product-card__wordpress uppercase">
+                  <a class="product-card__category" style="background-image: url(images/icons/ps.png);">
+                    <span class="product-card__category-text uppercase">
                       Psd
                     </span>
                   </a>
@@ -758,7 +1032,7 @@
                   the mattis, leo quam aliquet congue.
                 </p>
               </div>
-              <div class="product-card__price-box d-flexbox d-jcsb">
+              <div class="product-card__price-box d-flex f-aic f-jcsb">
                 <div class="product-card__price d-flex">
                   <span class="product-card__cost">
                     $10
@@ -777,27 +1051,19 @@
             </article>
 
 
-            <article class="product-card followers-card">
+            <article class="product-card followers__card">
               <img class="product-card__img" src="images/slider-2.jpg" alt="#">
-              <div class="product-card__link-hover" style="background-image: url(images/bg-product.jpg);">
-                <div class="product-card__info">
-                  <a class="btn btn--transparent product-card__more" href="#">More Info</a>
-                  <a class="btn btn--white product-card__more" href="#">Live Demo</a>
-                </div>
-              </div>
               <div class="product-card__resume">
                 <div class="product-card__title">
                   Bryson - Portfolio Template
                 </div>
-                <div class="product-card__profile d-flexbox">
-                  <a class="product-card__link d-flexbox" href="#">
-                    <img class="product-card__foto" src="images/face.jpg" alt="#">
-                    <span class="product-card__name">
-                      Artcorner
-                    </span>
+                <div class="product-card__box d-flex f-aic">
+                  <a class="profile followers__profile d-flex f-aic" href="#">
+                    <span class="profile__foto followers__foto" style="background-image: url(images/face.jpg);"></span>
+                    <span class="profile__name followers__name">Artcorner</span>
                   </a>
-                  <a class="product-card__word" style="background-image: url(images/icons/html.png);">
-                    <span class="product-card__wordpress uppercase">
+                  <a class="product-card__category" style="background-image: url(images/icons/html.png);">
+                    <span class="product-card__category-text uppercase">
                       Html
                     </span>
                   </a>
@@ -807,7 +1073,7 @@
                   the mattis, leo quam aliquet congue.
                 </p>
               </div>
-              <div class="product-card__price-box d-flexbox d-jcsb">
+              <div class="product-card__price-box d-flex f-aic f-jcsb">
                 <div class="product-card__price d-flex">
                   <span class="product-card__cost">
                     $10
@@ -826,27 +1092,19 @@
             </article>
 
 
-            <article class="product-card followers-card">
+            <article class="product-card followers__card">
               <img class="product-card__img" src="images/slider-2.jpg" alt="#">
-              <div class="product-card__link-hover" style="background-image: url(images/bg-product.jpg);">
-                <div class="product-card__info">
-                  <a class="btn btn--transparent product-card__more" href="#">More Info</a>
-                  <a class="btn btn--white product-card__more" href="#">Live Demo</a>
-                </div>
-              </div>
               <div class="product-card__resume">
                 <div class="product-card__title">
                   Bryson - Portfolio Template
                 </div>
-                <div class="product-card__profile d-flexbox">
-                  <a class="product-card__link d-flexbox" href="#">
-                    <img class="product-card__foto" src="images/face.jpg" alt="#">
-                    <span class="product-card__name">
-                      Artcorner
-                    </span>
+                <div class="product-card__box d-flex f-aic">
+                  <a class="profile followers__profile d-flex f-aic" href="#">
+                    <span class="profile__foto followers__foto" style="background-image: url(images/face.jpg);"></span>
+                    <span class="profile__name followers__name">AazzTech</span>
                   </a>
-                  <a class="product-card__word" style="background-image: url(images/icons/html.png);">
-                    <span class="product-card__wordpress uppercase">
+                  <a class="product-card__category" style="background-image: url(images/icons/html.png);">
+                    <span class="product-card__category-text uppercase">
                       Html
                     </span>
                   </a>
@@ -856,7 +1114,7 @@
                   the mattis, leo quam aliquet congue.
                 </p>
               </div>
-              <div class="product-card__price-box d-flexbox d-jcsb">
+              <div class="product-card__price-box d-flex f-aic f-jcsb">
                 <div class="product-card__price d-flex">
                   <span class="product-card__cost">
                     $10
@@ -875,27 +1133,19 @@
             </article>
 
 
-            <article class="product-card followers-card">
+            <article class="product-card followers__card">
               <img class="product-card__img" src="images/slider-2.jpg" alt="#">
-              <div class="product-card__link-hover" style="background-image: url(images/bg-product.jpg);">
-                <div class="product-card__info">
-                  <a class="btn btn--transparent product-card__more" href="#">More Info</a>
-                  <a class="btn btn--white product-card__more" href="#">Live Demo</a>
-                </div>
-              </div>
               <div class="product-card__resume">
                 <div class="product-card__title">
                   Bryson - Portfolio Template
                 </div>
-                <div class="product-card__profile d-flexbox">
-                  <a class="product-card__link d-flexbox" href="#">
-                    <img class="product-card__foto" src="images/face.jpg" alt="#">
-                    <span class="product-card__name">
-                      Artcorner
-                    </span>
+                <div class="product-card__box d-flex f-aic">
+                  <a class="profile followers__profile d-flex f-aic" href="#">
+                    <span class="profile__foto followers__foto" style="background-image: url(images/face.jpg);"></span>
+                    <span class="profile__name followers__name">AazzTech</span>
                   </a>
-                  <a class="product-card__word" style="background-image: url(images/icons/html.png);">
-                    <span class="product-card__wordpress uppercase">
+                  <a class="product-card__category" style="background-image: url(images/icons/html.png);">
+                    <span class="product-card__category-text uppercase">
                       Html
                     </span>
                   </a>
@@ -905,7 +1155,7 @@
                   the mattis, leo quam aliquet congue.
                 </p>
               </div>
-              <div class="product-card__price-box d-flexbox d-jcsb">
+              <div class="product-card__price-box d-flex f-aic f-jcsb">
                 <div class="product-card__price d-flex">
                   <span class="product-card__cost">
                     $10
@@ -924,27 +1174,19 @@
             </article>
 
 
-            <article class="product-card followers-card">
+            <article class="product-card followers__card">
               <img class="product-card__img" src="images/slider-2.jpg" alt="#">
-              <div class="product-card__link-hover" style="background-image: url(images/bg-product.jpg);">
-                <div class="product-card__info">
-                  <a class="btn btn--transparent product-card__more" href="#">More Info</a>
-                  <a class="btn btn--white product-card__more" href="#">Live Demo</a>
-                </div>
-              </div>
               <div class="product-card__resume">
                 <div class="product-card__title">
                   Bryson - Portfolio Template
                 </div>
-                <div class="product-card__profile d-flexbox">
-                  <a class="product-card__link d-flexbox" href="#">
-                    <img class="product-card__foto" src="images/face.jpg" alt="#">
-                    <span class="product-card__name">
-                      Artcorner
-                    </span>
+                <div class="product-card__box d-flex f-aic">
+                  <a class="profile followers__profile d-flex f-aic" href="#">
+                    <span class="profile__foto followers__foto" style="background-image: url(images/face.jpg);"></span>
+                    <span class="profile__name followers__name">AazzTech</span>
                   </a>
-                  <a class="product-card__word" style="background-image: url(images/icons/html.png);">
-                    <span class="product-card__wordpress uppercase">
+                  <a class="product-card__category" style="background-image: url(images/icons/html.png);">
+                    <span class="product-card__category-text uppercase">
                       Html
                     </span>
                   </a>
@@ -954,7 +1196,7 @@
                   the mattis, leo quam aliquet congue.
                 </p>
               </div>
-              <div class="product-card__price-box d-flexbox d-jcsb">
+              <div class="product-card__price-box d-flex f-aic f-jcsb">
                 <div class="product-card__price d-flex">
                   <span class="product-card__cost">
                     $10
@@ -980,7 +1222,7 @@
 
     <section class="statistics">
       <div class="container">
-        <div class="statistics__inner d-flex d-jcsb">
+        <div class="statistics__inner d-flex f-jcsb">
           <div class="statistics__box">
             <span class="lnr lnr-briefcase statistics__icon statistics__icon--briefcase"></span>
             <span class="statistics__figure statistics__figure--yellow">38,436</span>
@@ -1010,20 +1252,23 @@
     <section class="advantage">
       <div class="container">
         <div class="advantage__title title-news">
-          Why Choose<span class="title-blue">MartPlace</span>
+          Why Choose <span class="text-blue">MartPlace</span>
           <p class="advantage__text text">
             Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
             laborum
             dolo rumes fugats untras.
           </p>
         </div>
-        <div class="advantage__inner d-flex d-jcsb">
+        <div class="advantage__inner d-flex f-jcsb">
           <div class="about-info advantage__info">
             <span class="lnr lnr-license advantage__img advantage__img--payment"></span>
             <div class="about-info__title advantage__title-payment">
               One Time Payment
             </div>
-            <p class="about-info__text text">
+            <p class="about-info__text advantage__text-info text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
               Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
               the mattis, leo quam aliquet diam
               congue is laoreet elit metus.
@@ -1034,7 +1279,10 @@
             <div class="about-info__title advantage__title-payment">
               Quality Products
             </div>
-            <p class="about-info__text text">
+            <p class="about-info__text advantage__text-info text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
               Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
               the mattis, leo quam aliquet diam
               congue is laoreet elit metus.
@@ -1045,7 +1293,10 @@
             <div class="about-info__title advantage__title-payment">
               100% Secure Payment
             </div>
-            <p class="about-info__text text">
+            <p class="about-info__text advantage__text-info text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
               Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
               the mattis, leo quam aliquet diam
               congue is laoreet elit metus.
@@ -1056,7 +1307,10 @@
             <div class="about-info__title advantage__title-payment">
               Well Organized Code
             </div>
-            <p class="about-info__text text">
+            <p class="about-info__text advantage__text-info text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
               Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
               the mattis, leo quam aliquet diam
               congue is laoreet elit metus.
@@ -1067,7 +1321,10 @@
             <div class="about-info__title advantage__title-payment">
               Life Time Free Update
             </div>
-            <p class="about-info__text text">
+            <p class="about-info__text advantage__text-info text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
               Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
               the mattis, leo quam aliquet diam
               congue is laoreet elit metus.
@@ -1078,26 +1335,25 @@
             <div class="about-info__title advantage__title-payment">
               Fast and Friendly Support
             </div>
-            <p class="about-info__text text">
+            <p class="about-info__text advantage__text-info text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
               Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
               the mattis, leo quam aliquet diam
               congue is laoreet elit metus.
             </p>
           </div>
-
         </div>
-
-
       </div>
     </section>
 
     <!-- Section Sell and Buy  -->
 
     <section class="info-sell">
-      <div class="info-sell__inner d-flex d-jcsb">
-        <div class="info-sell__product" style="background-image: url(images/bg01.jpg);">
-          <div class="info-sell__content">
-            <img class="info-sell__img" src="images/icon-sell.svg" alt="#">
+      <div class="info-sell__inner d-flex f-jcsb">
+        <div class="info-sell__product info-sell__product--blue">
+          <div class="info-sell__content" style="background-image: url(images/Icon-sell.svg);">
             <div class="info-sell__title">
               Sell Your Products
             </div>
@@ -1110,9 +1366,8 @@
             </a>
           </div>
         </div>
-        <div class="info-sell__product" style="background-image: url(images/bg02.jpg);">
-          <div class="info-sell__content">
-            <img class="info-sell__img" src="images/icon-buy.svg" alt="#">
+        <div class="info-sell__product info-sell__product--violet">
+          <div class="info-sell__content" style="background-image: url(images/Icon-buy.svg);">
             <div class="info-sell__title">
               Start Shopping Today
             </div>
@@ -1133,7 +1388,7 @@
     <section class="feedback">
       <div class="container">
         <div class="feedback__title title-news">
-          Our Clients<span class="title-blue">Feedback</span>
+          Our Clients <span class="text-blue">Feedback</span>
           <p class="feedback__text text">
             Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
             laborum
@@ -1143,31 +1398,32 @@
         <div class="feedback__inner d-flex">
           <div class="feedback__box">
             <div class="feedback__client">
-              <div class="feedback__designer d-flexbox d-jcsb">
-                <a class="feedback__link d-flexbox" href="#">
-                  <img class="feedback__img" src="images/face.jpg" alt="#">
-                  <div class="feedback__profile">
-                    <span class="feedback__name">Taofiqul Hakim</span>
-                    <span class="feedback__user">Product Designer</span>
+              <div class="feedback__designer d-flex f-aic f-jcsb">
+                <a class="profile feedback__profile d-flex" href="#">
+                  <span class="profile__foto feedback__foto" style="background-image: url(images/face.jpg);"></span>
+                  <div class="profile__client feedback__author">
+                    <span class="profile__name feedback__name">Taofiqul Hakim</span>
+                    <span class="profile__check feedback__check">Product Designer</span>
                   </div>
                 </a>
                 <span class="lnr lnr-bubble feedback__bubble"></span>
               </div>
               <p class="feedback__text text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-                aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent
+                aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis.
+                Praesent
                 the
                 pharetra, justo ut scelerisque.
               </p>
             </div>
 
             <div class="feedback__client">
-              <div class="feedback__designer d-flexbox d-jcsb">
-                <a class="feedback__link d-flexbox d-jcsb" href="#">
-                  <img class="feedback__img" src="images/face.jpg" alt="#">
-                  <div class="feedback__profile">
-                    <span class="feedback__name">Saifullah Al Murtafee</span>
-                    <span class="feedback__user">Product Designer</span>
+              <div class="feedback__designer d-flex f-aic f-jcsb">
+                <a class="profile feedback__profile d-flex" href="#">
+                  <span class="profile__foto feedback__foto" style="background-image: url(images/face.jpg);"></span>
+                  <div class="profile__client feedback__author">
+                    <span class="profile__name feedback__name">Saifullah Al Murtafee</span>
+                    <span class="profile__check feedback__check">Product Designer</span>
                   </div>
                 </a>
                 <span class="lnr lnr-bubble feedback__bubble"></span>
@@ -1182,12 +1438,12 @@
 
 
             <div class="feedback__client">
-              <div class="feedback__designer d-flexbox d-jcsb">
-                <a class="feedback__link d-flexbox" href="#">
-                  <img class="feedback__img" src="images/face.jpg" alt="#">
-                  <div class="feedback__profile">
-                    <span class="feedback__name">Taofiqul Hakim</span>
-                    <span class="feedback__user">Product Designer</span>
+              <div class="feedback__designer d-flex f-aic f-jcsb">
+                <a class="profile feedback__profile d-flex" href="#">
+                  <span class="profile__foto feedback__foto" style="background-image: url(images/face.jpg);"></span>
+                  <div class="profile__client feedback__author">
+                    <span class="profile__name feedback__name">Taofiqul Hakim</span>
+                    <span class="profile__check feedback__check">Product Designer</span>
                   </div>
                 </a>
                 <span class="lnr lnr-bubble feedback__bubble"></span>
@@ -1201,12 +1457,12 @@
             </div>
 
             <div class="feedback__client">
-              <div class="feedback__designer d-flexbox d-jcsb">
-                <a class="feedback__link d-flexbox d-jcsb" href="#">
-                  <img class="feedback__img" src="images/face.jpg" alt="#">
-                  <div class="feedback__profile">
-                    <span class="feedback__name">Taofiqul Hakim</span>
-                    <span class="feedback__user">Product Designer</span>
+              <div class="feedback__designer d-flex f-aic f-jcsb">
+                <a class="profile feedback__profile d-flex" href="#">
+                  <span class="profile__foto feedback__foto" style="background-image: url(images/face.jpg);"></span>
+                  <div class="profile__client feedback__author">
+                    <span class="profile__name feedback__name">Saifullah Al Murtafee</span>
+                    <span class="profile__check feedback__check">Product Designer</span>
                   </div>
                 </a>
                 <span class="lnr lnr-bubble feedback__bubble"></span>
@@ -1221,12 +1477,12 @@
 
 
             <div class="feedback__client">
-              <div class="feedback__designer d-flexbox d-jcsb">
-                <a class="feedback__link d-flexbox" href="#">
-                  <img class="feedback__img" src="images/face.jpg" alt="#">
-                  <div class="feedback__profile">
-                    <span class="feedback__name">Taofiqul Hakim</span>
-                    <span class="feedback__user">Product Designer</span>
+              <div class="feedback__designer d-flex f-aic f-jcsb">
+                <a class="profile feedback__profile d-flex" href="#">
+                  <span class="profile__foto feedback__foto" style="background-image: url(images/face.jpg);"></span>
+                  <div class="profile__client feedback__author">
+                    <span class="profile__name feedback__name">Taofiqul Hakim</span>
+                    <span class="profile__check feedback__check">Product Designer</span>
                   </div>
                 </a>
                 <span class="lnr lnr-bubble feedback__bubble"></span>
@@ -1240,12 +1496,12 @@
             </div>
 
             <div class="feedback__client">
-              <div class="feedback__designer d-flexbox d-jcsb">
-                <a class="feedback__link d-flexbox d-jcsb" href="#">
-                  <img class="feedback__img" src="images/face.jpg" alt="#">
-                  <div class="feedback__profile">
-                    <span class="feedback__name">Taofiqul Hakim</span>
-                    <span class="feedback__user">Product Designer</span>
+              <div class="feedback__designer d-flex f-aic f-jcsb">
+                <a class="profile feedback__profile d-flex" href="#">
+                  <span class="profile__foto feedback__foto" style="background-image: url(images/face.jpg);"></span>
+                  <div class="profile__client feedback__author">
+                    <span class="profile__name feedback__name">Saifullah Al Murtafee</span>
+                    <span class="profile__check feedback__check">Product Designer</span>
                   </div>
                 </a>
                 <span class="lnr lnr-bubble feedback__bubble"></span>
@@ -1267,96 +1523,86 @@
 
     <!-- Section News  -->
 
-    <section class="blog-news">
+    <section class="news">
       <div class="container">
-        <div class="blog-news__title title-news">
-          Latest<span class="title-blue">News</span>
-          <p class="blog-news__text text">
+        <div class="news__title title-news">
+          Latest <span class="text-blue">News</span>
+          <p class="news__text text">
             Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
             laborum
             dolo rumes fugats untras.
           </p>
         </div>
-        <div class="blog-news__inner d-flex d-jcsb">
-          <article class="product-card blog-news__card">
+        <div class="news__inner d-flex f-jcsb">
+          <article class="product-card news__card">
             <img class="product-card__img" src="images/slider-1.jpg" alt="#">
             <div class="product-card__resume">
-              <div class="product-card__title blog-news__web">
+              <div class="product-card__title news__web">
                 Web Design Trends in 2017
               </div>
-              <p class="product-card__text blog-news__text">
+              <p class="product-card__text news__text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                 the mattis, leo quam aliquet congue.
               </p>
             </div>
-            <div class="product-card__price-box d-flexbox d-jcsb">
-              <div class="product-card__price d-flex">
-                <span class="lnr lnr-clock blog-news__clock text-blue"></span>
-                <time class="blog-news__time">24 Feb 2017</time>
+            <div class="product-card__price-box news__price-box d-flex f-aic f-jcsb">
+              <div class="product-card__price news__price d-flex">
+                <span class="lnr lnr-clock news__clock text-blue"></span>
+                <time class="news__time">24 Feb 2017</time>
               </div>
-              <button class="product-card__btn blog-news__btn" type="button">
-                <span class="lnr lnr-bubble blog-news__comment"></span>
+              <a class="product-card__btn news__btn">
+                <span class="lnr lnr-bubble news__comment"></span>
                 45
-              </button>
-              <button class="product-card__btn blog-news__btn" type="button">
-                <span class="lnr lnr-eye blog-news__comment"></span>
-                345
-              </button>
+              </a>
+              <span class="lnr lnr-eye news__comment"> 345</span>
             </div>
           </article>
 
-          <article class="product-card blog-news__card">
+          <article class="product-card news__card">
             <img class="product-card__img" src="images/slider-2.jpg" alt="#">
             <div class="product-card__resume">
-              <div class="product-card__title  blog-news__web">
+              <div class="product-card__title  news__web">
                 The best advices to start your
                 own project
               </div>
-              <p class="product-card__text  blog-news__text">
+              <p class="product-card__text  news__text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                 the mattis, leo quam aliquet congue.
               </p>
             </div>
-            <div class="product-card__price-box d-flexbox d-jcsb">
-              <div class="product-card__price d-flex">
-                <span class="lnr lnr-clock blog-news__clock text-blue"></span>
-                <time class="blog-news__time">15 Mar 2017</time>
+            <div class="product-card__price-box news__price-box d-flex f-aic f-jcsb">
+              <div class="product-card__price news__price d-flex">
+                <span class="lnr lnr-clock news__clock text-blue"></span>
+                <time class="news__time">15 Mar 2017</time>
               </div>
-              <button class="product-card__btn blog-news__btn" type="button">
-                <span class="lnr lnr-bubble blog-news__comment"></span>
+              <a class="product-card__btn news__btn">
+                <span class="lnr lnr-bubble news__comment"></span>
                 45
-              </button>
-              <button class="product-card__btn blog-news__btn" type="button">
-                <span class="lnr lnr-eye blog-news__comment"></span>
-                345
-              </button>
-            </div>
+              </a>
+              <span class="lnr lnr-eye news__comment"> 345</span>
           </article>
 
-          <article class="product-card blog-news__card">
+          <article class="product-card news__card">
             <img class="product-card__img" src="images/slider-3.jpg" alt="#">
             <div class="product-card__resume">
-              <div class="product-card__title  blog-news__web">
+              <div class="product-card__title  news__web">
                 Best Related Post Plugin
               </div>
-              <p class="product-card__text  blog-news__text">
+              <p class="product-card__text  news__text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                 the mattis, leo quam aliquet congue.
               </p>
             </div>
-            <div class="product-card__price-box d-flexbox d-jcsb">
-              <div class="product-card__price d-flex">
-                <span class="lnr lnr-clock blog-news__clock text-blue"></span>
-                <time class="blog-news__time">20 Dec 2016</time>
+            <div class="product-card__price-box news__price-box d-flex f-aic f-jcsb">
+              <div class="product-card__price news__price d-flex">
+                <span class="lnr lnr-clock news__clock text-blue"></span>
+                <time class="news__time">20 Dec 2016</time>
               </div>
-              <button class="product-card__btn blog-news__btn" type="button">
-                <span class="lnr lnr-bubble blog-news__comment"></span>
+              <a class="product-card__btn news__btn">
+                <span class="lnr lnr-bubble news__comment"></span>
                 45
-              </button>
-              <button class="product-card__btn blog-news__btn" type="button">
-                <span class="lnr lnr-eye blog-news__comment"></span>
-                345
-              </button>
+              </a>
+              <span class="lnr lnr-eye news__comment"> 345</span>
             </div>
           </article>
         </div>
@@ -1371,14 +1617,14 @@
           <div class="guarantee__block">
             <div class="guarantee__box" style="background-image: url(images/icon-guarantee.png);"></div>
             <div class="guarantee__title">
-              30 Days Money Back<span class="title-blue">Guarantee</span>
+              30 Days Money Back <span class="text-blue">Guarantee</span>
             </div>
           </div>
 
           <div class="guarantee__block">
             <div class="guarantee__box" style="background-image: url(images/icon-support.png);"></div>
             <div class="guarantee__title">
-              Fast and Friendly<span class="title-blue">Support</span>
+              Fast and Friendly <span class="text-violet">Support</span>
             </div>
           </div>
         </div>
@@ -1398,15 +1644,17 @@
         </div>
       </div>
     </section>
-</main>
+  </main>
 
-<!-- Footer  -->
+  <!-- Footer  -->
 
   <footer class="footer">
     <div class="container">
       <div class="footer__inner d-flex ">
-        <div class="footer__column-one">
-          <img class="footer__img" src="images/logo-footer.png" alt="logo">
+        <div class="footer__column footer__column--one">
+          <a class="logo footer__logo" href="#">
+            <img class="logo__img footer__img" src="images/logo-footer.png" alt="logo">
+          </a>
           <p class="footer__text">
             Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo
             quam.
@@ -1420,17 +1668,17 @@
               <span class="lnr lnr-envelope footer__phone"></span>
               support@aazztech.com
             </a>
-            <a class="footer__navi d-flexbox" href="#">
+            <a class="footer__navi d-flex f-aic" href="#">
               <span class="lnr lnr-map-marker footer__street"></span>
               <span>202 New Hampshire Avenue Northwest #100, New York-2573</span>
             </a>
           </address>
         </div>
-        <div class="footer__column-two">
+        <div class="footer__column footer__column--two">
           <div class="footer__column-title">
             Our Company
           </div>
-          <ul class="footer__info">
+          <ul class="footer__menu">
             <li class="footer__item">
               <a class="footer__link" href="#">About Us</a>
             </li>
@@ -1455,11 +1703,11 @@
           </ul>
         </div>
 
-        <div class="footer__column-three">
+        <div class="footer__column footer__column--three">
           <div class="footer__column-title">
             Help Support
           </div>
-          <ul class="footer__info">
+          <ul class="footer__menu">
             <li class="footer__item">
               <a class="footer__link" href="#">Support Forum</a>
             </li>
@@ -1484,60 +1732,59 @@
           </ul>
         </div>
 
-        <div class="footer__column-four">
+        <div class="footer__column footer__column--four">
           <div class="footer__column-title">
             Newsletter
           </div>
           <p class="footer__text footer__text--height">
             Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
           </p>
-          <form class="search footer__form" action="#">
-            <label class="search__product footer__email" name="email">
+          <form class="footer__form" action="#">
+            <label class="footer__email" name="email">
               <span class="hidden">Enter email</span>
-              <input class="search__input footer__input" type="email" name="email" placeholder="Enter email" required>
+              <input class="footer__input" type="email" name="email" placeholder="Enter email" required>
             </label>
-            <button class=" footer__btn btn btn--blue" type="submit"><span class="hidden">Submit</span>Submit</button>
+            <button class="footer__btn btn btn--blue" type="submit"><span class="hidden">Submit</span>Submit</button>
           </form>
 
-          <address class="footer__net">
-            <div class="footer__network">
-              <ul class="footer__icons d-flex">
-                <li class="footer__contact footer__contact--facebook">
-                  <a class="icon-facebook footer__icon" href="#"></a>
-                </li>
-                <li class="footer__contact footer__contact--twitter">
-                  <a class="icon-twitter footer__icon" href="#"></a>
-                </li>
-                <li class="footer__contact footer__contact--google">
-                  <a class="icon-google footer__icon" href="#"></a>
-                </li>
-                <li class="footer__contact footer__contact--pinterest">
-                  <a class="icon-pinterest footer__icon" href="#"></a>
-                </li>
-                <li class="footer__contact footer__contact--linkedin">
-                  <a class="icon-linkedin footer__icon" href="#"></a>
-                </li>
-                <li class="footer__contact footer__contact--basketball">
-                  <a class="icon-basketball footer__icon" href="#"></a>
-                </li>
-              </ul>
-            </div>
+          <address class="footer__network">
+            <ul class="footer__icons">
+              <li class="footer__contact">
+                <a class="footer__icon footer__icon--facebook icon-facebook " href="#"></a>
+              </li>
+              <li class="footer__contact">
+                <a class="footer__icon footer__icon--twitter icon-twitter" href="#"></a>
+              </li>
+              <li class="footer__contact">
+                <a class="footer__icon footer__icon--google icon-google" href="#"></a>
+              </li>
+              <li class="footer__contact">
+                <a class="footer__icon footer__icon--pinterest icon-pinterest" href="#"></a>
+              </li>
+              <li class="footer__contact">
+                <a class="footer__icon footer__icon--linkedin icon-linkedin" href="#"></a>
+              </li>
+              <li class="footer__contact">
+                <a class="footer__icon footer__icon--basketball icon-basketball" href="#"></a>
+              </li>
+            </ul>
           </address>
         </div>
       </div>
     </div>
+    <div class="footer__bottom">
+      ©2017
+      <a class="footer__bottom-text" href="#">
+        <span class="footer__bottom-link">MartPlace</span>
+      </a>
+      . All rights reserved. Created by
+      <a class="footer__bottom-text" href="#">
+        <span class="footer__bottom-link">AazzTech</span>
+      </a>
+    </div>
   </footer>
 
-  <div class="footer-bottom">
-    ©2017
-    <a class="footer-bottom__text" href="#">
-      <span class="footer-bottom__link">MartPlace</span>
-    </a>
-    . All rights reserved. Created by
-    <a class="footer-bottom__text" href="#">
-      <span class="footer-bottom__link">AazzTech</span>
-    </a>
-  </div>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
   </script>

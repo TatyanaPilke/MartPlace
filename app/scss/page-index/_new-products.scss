@@ -9,9 +9,9 @@
   }
 
   &__title {
-    padding: 37px 70px 37px 30px;
     margin-bottom: 30px;
     position: relative;
+    padding: 37px 30px;
   }
 
   &__filter {
@@ -58,7 +58,7 @@
     position: absolute;
     right: 7px;
     background-color: $white;
-    padding: 28px 50px 12px 30px;
+    padding: 28px 50px 10px 30px;
     max-width: 183px;
     border-radius: 5px;
     box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
@@ -84,43 +84,16 @@
   &__link-item {
     font-size: 15px;
     color: #747b86;
-
-    &--active {
-      color: $blue;
-    }
   }
 
   &__category {
-    background-color: $white;
-    padding: 30px 0 30px 30px;
-    border-radius: 4px;
-    box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
+    padding: 25px 0 20px 30px;
     margin-bottom: 50px;
   }
 
   &__btn {
     padding: 9px 18px 7px 20px;
     margin-right: 5px;
-    cursor: pointer;
-    transition: color 0.3s;
-
-    &:focus {
-    background-color: $blue;
-    box-shadow: 0 0 5px 0 rgba($blue, 0.8);
-    }
-  
-    &:hover {
-    background-color: $blue;
-    color: $white;
-    }
-  
-    &:active {
-    box-shadow: inset 0 0 5px 0 rgba(blue, 0.5);
-    }
-
-    &--active {
-      color: $white;
-      background-color: $blue;
-    }
+    margin-bottom: 10px;
   }
 }
