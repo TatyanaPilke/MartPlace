@@ -1,8 +1,13 @@
 .advantage {
   padding: 113px 0 82px;
 
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+
   &__inner {
     flex-wrap: wrap;
+    counter-reset: number;
   }
 
   &__title {
@@ -14,16 +19,25 @@
     max-width: 675px;
   }
 
-  &__text-info {
-    overflow: auto;
-  }
-
   &__info {
     text-align: center;
-    width: calc(34.2% - 30px);
+    max-width: 360px;
     padding: 45px 30px 52px;
     margin-bottom: 40px;
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    counter-increment: number;
+    position: relative;
+
+    &:before {
+      content: counter(number, decimal-leading-zero);
+      position: absolute;
+      font-size: 48px;
+      font-weight: 300;
+      top: 20px;
+      left: 20px;
+      color: $blue;
+      opacity: 0.2;
+    }
   }
 
   &__title-payment {

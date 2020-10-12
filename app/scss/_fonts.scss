@@ -29,6 +29,16 @@
 }
 
 @font-face {
+  font-family: 'Quicksand';
+  src:  url('../fonts/Quicksand-light.woff2') format('woff2'),
+        url('../fonts/Quicksand-light.woff') format('woff'),
+        url('../fonts/Quicksand-light.ttf') format('truetype');
+  font-weight: 300; 
+  font-style: normal; 
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?xfvu0d');
   src:  url('../fonts/icomoon.eot?xfvu0d#iefix') format('embedded-opentype'),

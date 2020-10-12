@@ -1,10 +1,17 @@
 .profile {
   margin-left: 48px;
   outline: transparent;
+  // position: relative;
+  padding: 25px 0;
 
-  &:hover+.header__hover {
-    top: 98px;
+  @media (max-width: 576px) {
+    margin-left: 10px;
+  }
+  
+  &:hover+.header__drop-down{
     display: block;
+    position: absolute;
+    top: 84px;
     right: 0;
   }
 
@@ -36,5 +43,9 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+
+   @media (max-width: 576px) {
+     display: none;
+   }
   }
 }

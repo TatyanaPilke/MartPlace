@@ -2,6 +2,10 @@
   background-color: #f6f7fb;
   padding: 120px 0 136px;
 
+  @media (max-width: 768px) {
+    padding: 60px 0 60px;
+  }
+
   &__inner {
     display: flex !important;
     justify-content: space-between;
@@ -15,13 +19,14 @@
   }
 
   &__filter {
-    padding-right: 30px;
+    padding: 0 30px 40px 0;
     color: #747b86;
     position: absolute;
     right: 30px;
     font-size: 16px;
     top: 45px;
     cursor: pointer;
+    transition: color 0.3s ease-in-out;
 
     &:hover {
       color: $blue;
@@ -29,7 +34,7 @@
 
     &:hover~.new-products__list {
       display: block;
-      z-index: 2;
+      z-index: 3;
     }
 
     &::after {
@@ -42,11 +47,22 @@
       position: absolute;
       right: 0;
     }
+
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
 
   &__list-item {
     list-style: none;
     padding-bottom: 14px;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__link-item {
 
     &:hover {
       color: $blue;
@@ -65,6 +81,7 @@
 
     &:hover {
       display: block;
+      z-index: 3;
     }
 
     &::before {
@@ -89,10 +106,14 @@
   &__category {
     padding: 25px 0 20px 30px;
     margin-bottom: 50px;
+
+    @media (max-width: 576px) {
+      padding: 15px;
+    }
   }
 
   &__btn {
-    padding: 9px 18px 7px 20px;
+    padding: 7px 18px 7px 20px;
     margin-right: 5px;
     margin-bottom: 10px;
   }

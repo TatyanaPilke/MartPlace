@@ -1,11 +1,32 @@
 .menu {
   position: relative;
 
+  @media (max-width: 992px) {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 178px;
+    text-align: center;
+    z-index: 3;
+    background-color: $white;
+    padding: 20px;
+  }
+
   &__link {
     color: $grey-light;
     font-size: 15px;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
+    padding: 33px 0;
+
+    @media (max-width: 992px) {
+      padding: 0;
+    }
+
+    &:hover+.drop-down__list {
+      display: block;
+    }
 
     &:focus {
       color: $blue;
@@ -22,25 +43,13 @@
 
   &__list {
     display: inline-block;
+    list-style: none;
     margin-right: 28px;
     text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
 
-    &:hover+.menu-hover {
+    @media (max-width: 992px) {
       display: block;
-      background-color: $white;
-    }
-
-    &--products {
-      &:hover+.menu-hover {
-        left: 75px;
-      }
-    }
-
-    &--category {
-      &:hover+.menu-hover {
-      left: 220px;
-      }
+      margin: 20px;
     }
   }
 
@@ -49,4 +58,3 @@
     padding: 0;
   }
 }
-

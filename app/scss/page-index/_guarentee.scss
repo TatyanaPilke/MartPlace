@@ -2,7 +2,10 @@
   padding: 60px 0 62px;
 
   &__inner {
-    justify-content: space-between;
+
+    @media (max-width: 768px){
+      flex-wrap: wrap;
+    }
   }
 
   &__block {
@@ -10,6 +13,10 @@
     max-width: 570px;
     width: 100%;
     margin-right: 30px;
+
+    @media (max-width: 768px){
+      margin: 0 auto 50px;
+    }
   }
 
   &__box {

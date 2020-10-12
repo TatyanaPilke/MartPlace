@@ -17,8 +17,19 @@ $(function(){
   $('.featured__inner').slick({
     prevArrow: '<button type="button" class="slick-arrow featured__arrow featured__arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
     nextArrow: '<button type="button" class="slick-arrow featured__arrow featured__arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
-    appendArrows: '.arrows-wrap'
-  })
+    appendArrows: '.arrows-wrap',
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: false,
+        }
+      },
+    ]
+  });
 
 
   $('.followers__box').slick({
@@ -27,7 +38,18 @@ $(function(){
     slidesToScroll: 3,
     prevArrow: '<button type="button" class="slick-arrow followers__arrow followers__arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
     nextArrow: '<button type="button" class="slick-arrow followers__arrow followers__arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
-    appendArrows: '.arrows-followers'
+    appendArrows: '.arrows-followers',
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: false,
+        }
+      },
+    ]
   })
   
   $('.feedback__box').slick({
@@ -40,7 +62,13 @@ $(function(){
     nextArrow: '<button class="feedback__arrow feedback__arrow--next"></button><span class="lnr lnr-chevron-right feedback__btn feedback__btn--next"></span></button>',
   })
 
-  new SimpleBar(document.getElementById('my-simplebar'));
+  document.querySelectorAll('.js-simplebar').forEach(el => {
+    new SimpleBar(el);
+  });
+
+  $('.header__btn').on('click', function(){
+    $('.menu').slideToggle();
+  })
 
   var mixer = mixitup('.new-products__inner');
 

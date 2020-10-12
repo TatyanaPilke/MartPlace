@@ -3,11 +3,24 @@
 
   &__inner {
     padding: 95px 0;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__box {
     max-width: 360px;
     text-align: center;
+    
+    @media (max-width: 768px) {
+      margin: 0 50px 50px;
+    }
+
+    @media (max-width: 576px) {
+      margin: 0 20px 50px;
+    }
   }
 
   &__icon {

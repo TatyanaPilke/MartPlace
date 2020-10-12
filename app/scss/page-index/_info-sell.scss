@@ -1,8 +1,15 @@
 .info-sell {
 
+  &__inner {
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
   &__product {
     width: 100%;
-    padding: 100px 190px;
+    padding: 100px 20px;
     text-align: center;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -20,25 +27,37 @@
 
   &__content {
     width: 100%;
+  }
+
+  &__content-image {
+    margin: 0 auto;
+    width: 120px;
+    height: 100px;
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 115px;
+    background-size: contain;
   }
 
   &__title {
-    padding-top: 140px;
+    padding-top: 40px;
     font-size: 36px;
     color: $white;
+    white-space: nowrap;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
   }
 
   &__text {
     color: $white;
-    margin: 33px 0 50px;
+    margin: 20px auto 64px;
     line-height: 1.9;
+    max-width: 590px;
   }
 
   &__link {
-    padding: 18px 25px ;
+    padding: 18px 25px;
 
     &:hover {
       background-color: transparent;
@@ -48,6 +67,10 @@
 
     &--sell {
       padding: 18px 40px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 15px 20px ;
     }
   }
 }

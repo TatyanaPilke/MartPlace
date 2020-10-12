@@ -1,6 +1,11 @@
 .feedback {
   padding: 115px 0 137px;
 
+  
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+
   &__inner {
     margin: 53px 0 75px;
   }

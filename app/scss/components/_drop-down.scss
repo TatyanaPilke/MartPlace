@@ -1,0 +1,101 @@
+.drop-down {
+
+  // position: relative;
+
+  &__list {
+    display: none;
+    padding: 20px;
+    position: absolute;
+    top: 48px;
+    list-style: none;
+    text-transform: none;
+    background-color: $white;
+    min-width: 270px;
+    border-radius: 0 0 3px 3px;
+    border-top: 1px solid $blue;
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    z-index: 2;
+    transition: color 0.3s ease-in-out;
+
+    @media (max-width: 992px) {
+      position: absolute;
+      top: 0;
+    }
+
+    // Пришлось применить фиксированную ширину, чтоб растянуть блок на всю ширину контейнера.
+    // И адаптив конечно же не работает)
+
+    &--pages {
+      position: absolute;
+      width: 100%;
+      width: 1140px;
+      left: 0;
+      right: 0;
+    }
+
+    &:hover {
+      display: block;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 230px;
+    padding: 17px 10px 13px;
+    color: $menu-hover;
+    font-size: 15px;
+    border-radius: 2px;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+
+    &--item {
+      padding: 10px 0 15px 10px;
+
+      &:hover {
+        background-color: transparent;
+        color: $blue;
+      }
+
+      &:active {
+        color: $red;
+      }
+    }
+  }
+
+  &__title-category {
+    font-weight: 500;
+    border-bottom: 1px solid #e8ebf0;
+    margin: 0 40px 21px 5px;
+    padding: 10px 0 17px 0;
+  }
+
+  &__col {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &--column-1 {
+      max-width: 233px;
+      padding-right: 75px;
+    }
+
+    &--column-2 {
+      max-width: 242px;
+      padding-right: 72px;
+    }
+
+    &--column-3 {
+      max-width: 213px;
+      padding-right: 50px;
+    }
+
+    &--column-4 {
+      max-width: 220px;
+      padding-right: 75px;
+    }
+  }
+}
