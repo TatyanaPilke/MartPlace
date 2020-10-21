@@ -1,10 +1,6 @@
 .marketplace {
   min-height: 725px;
-  background: rgb(45, 81, 209);
-  background: -moz-linear-gradient(left, rgba(45, 81, 209, 1) 0%, rgba(9, 47, 186, 1) 84%);
-  background: -webkit-linear-gradient(left, rgba(45, 81, 209, 1) 0%, rgba(9, 47, 186, 1) 84%);
   background: linear-gradient(to right, rgba(45, 81, 209, 1) 0%, rgba(9, 47, 186, 1) 84%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d51d1', endColorstr='#092fba', GradientType=1);
   position: relative;
 
   &__inner {
@@ -13,7 +9,7 @@
     padding: 172px 0 243px;
 
     @media (max-width: 576px) {
-      padding: 70px 0 200px;
+      padding: 70px 0 240px;
     }
   }
 

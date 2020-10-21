@@ -28,6 +28,15 @@
     counter-increment: number;
     position: relative;
 
+    @media (max-width: 1120px) {
+     margin: 0 auto 30px;
+    }
+
+    
+    @media (max-width: 576px) {
+      max-width: 100%;
+     }
+
     &:before {
       content: counter(number, decimal-leading-zero);
       position: absolute;

@@ -6,6 +6,38 @@
     position: relative;
   }
 
+  &__box {
+
+    @media (max-width: 460px) {
+      position: absolute;
+      z-index: 2;
+      height: 100px;
+      background-color: #eef1f3;
+      transform: translateX(150%);
+
+      &.active {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__user {
+    display: none;
+    font-size: 50px;
+    color: $blue;
+
+    &:before {
+      position: absolute;
+      right: 0;
+      top: 25px;
+      z-index: 3;
+    }
+
+    @media (max-width: 460px) {
+      display: block;
+    }
+  }
+
   &__seller {
     font-size: 14px;
     padding: 10px 18px 10px 17px;
@@ -21,11 +53,51 @@
     }
   }
 
-  &__foto {
+  &__profile {
+    margin-left: 48px;
+    padding: 25px 0;
 
-    @media (max-width: 576px) {
-      display: none;
+    @media (max-width: 460px) {
+      margin-left: 30px;
     }
+
+    @media (max-width: 400px) {
+      margin: 0 50px 0 30px;
+    }
+
+    @media (max-width: 375px) {
+      margin: 0 30px 0 20px;
+    }
+
+    @media (max-width: 360px) {
+      margin: 0 30px 0 0;
+    }
+  }
+
+  &__name {
+    @media (max-width: 400px) {
+      font-size: 15px;
+    }
+  }
+
+  &__foto {
+    width: 50px;
+    height: 50px;
+
+    @media (max-width: 620px) {
+      width: 40px;
+      height: 40px;
+    }
+
+    @media (max-width: 400px) {
+      margin-top: 5px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__client {
+    margin-left: 21px;
   }
 
   &__badge {
@@ -37,17 +109,18 @@
     }
   }
 
-  &__notification {
-
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
-
   &__alerts {
     margin-left: 27px;
     position: relative;
     padding-bottom: 45px;
+
+    @media (max-width: 400px) {
+      margin-left: 60px;
+
+      &:last-child {
+        margin-left: 40px;
+      }
+    }
 
     &:hover+.header__envelope {
       display: block;
@@ -178,10 +251,10 @@
   &__drop-down {
     display: none;
     width: 270px;
+    position: absolute;
+    right: 0;
 
     @media (max-width: 992px) {
-      position: absolute;
-      top: 84px;
       right: 0;
     }
 
@@ -243,28 +316,55 @@
     font-size: 15px;
   }
 
-  &__foto {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 0;
-    padding: 0;
-  }
-
   &__btn {
     display: none;
     width: 40px;
-    margin-right: 20px;
+    height: 4px;
+    background-color: $black;
+    border: transparent;
+    outline: transparent;
+    border-radius: 2px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: " ";
+      position: absolute;
+      width: 40px;
+      height: 4px;
+      border-radius: 2px;
+      left: 0;
+      background-color: $black;
+      transition: 0.3s ease-in-out;
+    }
+
+    &::before {
+      top: 10px;
+    }
+
+    &::after {
+      top: -10px;
+    }
 
     @media (max-width: 992px) {
       display: block;
     }
   }
 
-  &__burger {
-    display: block;
-    height: 5px;
-    margin-bottom: 6px;
-    background-color: $black;
+  &__active {
+    background-color: transparent;
+    transition: 0.3s ease;
+
+    &::before {
+      content: " ";
+      transform: rotate(45deg);
+      top: 0;
+    }
+
+    &::after {
+      content: " ";
+      transform: rotate(-45deg);
+      top: 0;
+    }
   }
 }
