@@ -25,8 +25,18 @@
     }
   }
 
-  &__img {
+  &__hover {
     max-width: 48.7%;
+    max-height: 450px;
+  }
+
+  &__image {
+    max-width: 48.7%;
+    height: 450px;
+    object-fit: cover;
+  }
+
+  &__img {
     max-height: 450px;
     display: block;
     border-radius: 4px 0 0 4px;

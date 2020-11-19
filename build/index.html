@@ -12,8 +12,9 @@
 </head>
 
 <body>
-  <header class="header">
   <div class="wrapper">
+    <div class="content content-page">
+  <header class="header">
     <div class="container">
       <div class="header__inner d-flex f-jcsb f-aic">
         <a class="logo" href="#">
@@ -116,7 +117,7 @@
         <div class="lnr lnr-user header__user"></div>
       </div>
     </div>
-  </div>
+  
 
   <!-- Menu start-->
 
@@ -411,12 +412,12 @@
           </ul>
         </nav>
 
-        <form class="header__search" action="#">
-          <label class="header__label">
+        <form class="header-search" action="#">
+          <label class="header-search__label">
             <span class="hidden">Search product here</span>
-            <input class="header__input" type="search" name="search" placeholder="Search product here..." required>
+            <input class="header-search__input" type="search" name="search" placeholder="Search product here..." required>
           </label>
-          <button class="btn btn--blue header__magnify" type="submit"><span class="hidden">Search</span></button>
+          <button class="btn btn--blue header-search__magnify" type="submit"><span class="hidden">Search</span></button>
         </form>
       </div>
     </div>
@@ -509,7 +510,13 @@
     <div class="featured__inner">
 
       <article class="product-card featured__card">
-        <img class="product-card__img featured__img" src="images/slider-1.jpg" alt="#">
+        <div class="product-card__image featured__image">
+          <img class="product-card__img featured__img" src="images/slider-1.jpg" alt="#">
+          <div class="product-card__hover featured__hover">
+            <a class="product-card__link-hover btn btn--transparent" href="#">More Info</a>
+            <a class="product-card__link-hover btn btn--transparent" href="#">Live Demo</a>
+          </div>
+        </div>
         <div class="product-card__resume featured__resume">
           <div class="product-card__title featured__title">
             One Page Resume Template
@@ -564,7 +571,13 @@
       </article>
 
       <article class="product-card featured__card">
-        <img class="product-card__img featured__img" src="images/slider-2.jpg" alt="#">
+        <div class="product-card__image featured__image">
+          <img class="product-card__img featured__img" src="images/slider-2.jpg" alt="#">
+          <div class="product-card__hover featured__hover">
+            <a class="product-card__link-hover btn btn--transparent" href="#">More Info</a>
+            <a class="product-card__link-hover btn btn--transparent" href="#">Live Demo</a>
+          </div>
+        </div>
         <div class="product-card__resume featured__resume">
           <div class="product-card__title featured__title">
             One Page Resume Template
@@ -592,7 +605,7 @@
               leo quam aliquet congue justo ut scelerisque.
             </p>
           </div>
-          <div class="featured__use">
+          <div class="featured__use d-flex">
             <a class=" btn btn--grey featured__tag" href="#">website</a>
             <a class=" btn btn--grey featured__tag" href="#">plugin</a>
             <a class=" btn btn--grey featured__tag" href="#">landing page</a>
@@ -617,7 +630,13 @@
       </article>
 
       <article class="product-card featured__card">
-        <img class="product-card__img featured__img" src="images/slider-3.jpg" alt="#">
+        <div class="product-card__image featured__image">
+          <img class="product-card__img featured__img" src="images/slider-3.jpg" alt="#">
+          <div class="product-card__hover featured__hover">
+            <a class="product-card__link-hover btn btn--transparent" href="#">More Info</a>
+            <a class="product-card__link-hover btn btn--transparent" href="#">Live Demo</a>
+          </div>
+        </div>
         <div class="product-card__resume featured__resume">
           <div class="product-card__title featured__title">
             One Page Resume Template
@@ -645,7 +664,7 @@
               leo quam aliquet congue justo ut scelerisque.
             </p>
           </div>
-          <div class="featured__use">
+          <div class="featured__use d-flex">
             <a class=" btn btn--grey featured__tag" href="#">website</a>
             <a class=" btn btn--grey featured__tag" href="#">plugin</a>
             <a class=" btn btn--grey featured__tag" href="#">landing page</a>
@@ -1000,7 +1019,9 @@
     <div class="followers__inner d-flex">
       <div class="followers__box">
         <article class="product-card followers__card">
-          <img class="product-card__img" src="images/slider-2.jpg" alt="#">
+          <div class="product-card__image">
+            <img class="product-card__img" src="images/slider-1.jpg" alt="#">
+          </div>
           <div class="product-card__resume">
             <div class="product-card__title">
               E-commerce Shopping Cart
@@ -1040,7 +1061,9 @@
         </article>
 
         <article class="product-card followers__card">
-          <img class="product-card__img" src="images/slider-2.jpg" alt="#">
+          <div class="product-card__image">
+            <img class="product-card__img" src="images/slider-3.jpg" alt="#">
+          </div>
           <div class="product-card__resume">
             <div class="product-card__title">
               Marketify Coffee Shop
@@ -1081,7 +1104,9 @@
 
 
         <article class="product-card followers__card">
-          <img class="product-card__img" src="images/slider-2.jpg" alt="#">
+          <div class="product-card__image">
+            <img class="product-card__img" src="images/slider-2.jpg" alt="#">
+          </div>
           <div class="product-card__resume">
             <div class="product-card__title">
               Bryson - Portfolio Template
@@ -1534,7 +1559,9 @@
     </div>
     <div class="news__inner d-flex f-jcsb">
       <article class="product-card news__card">
-        <img class="product-card__img" src="images/slider-1.jpg" alt="#">
+        <div class="product-card__image">
+          <img class="product-card__img" src="images/slider-1.jpg" alt="#">
+        </div>
         <div class="product-card__resume news__resume">
           <div class="product-card__title news__web">
             Web Design Trends in 2017
@@ -1558,7 +1585,9 @@
       </article>
 
       <article class="product-card news__card">
-        <img class="product-card__img" src="images/slider-2.jpg" alt="#">
+        <div class="product-card__image">
+          <img class="product-card__img" src="images/slider-2.jpg" alt="#">
+        </div>
         <div class="product-card__resume news__resume">
           <div class="product-card__title  news__web">
             The best advices to start your
@@ -1582,7 +1611,9 @@
       </article>
 
       <article class="product-card news__card">
-        <img class="product-card__img" src="images/slider-3.jpg" alt="#">
+        <div class="product-card__image">
+          <img class="product-card__img" src="images/slider-3.jpg" alt="#">
+        </div>
         <div class="product-card__resume news__resume">
           <div class="product-card__title  news__web">
             Best Related Post Plugin
@@ -1641,7 +1672,8 @@
    
   </main>
   
-  <footer class="footer">
+  </div>
+<footer class="footer">
   <div class="container">
     <div class="footer__inner d-flex">
       <div class="footer__column footer__column--one">
@@ -1777,7 +1809,7 @@
     </a>
   </div>
 </footer>
-
+</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 </script>
 <script src="js/libs.min.js"></script>
