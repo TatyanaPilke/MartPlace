@@ -1,0 +1,80 @@
+.statistics {
+  background-color: #212225;
+
+  &__inner {
+    padding: 95px 0;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 576px) {
+      padding: 50px 0;
+    }
+  }
+
+  &__box {
+    max-width: 360px;
+    text-align: center;
+
+    @media (max-width: 576px) {
+      padding: 0 40px;
+      margin: 0 auto 50px;
+    }
+
+    @media (max-width: 440px) {
+      max-width: 100%;
+      padding: 0 60px;
+      flex-direction: column;
+    }
+  }
+
+  &__icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 39px;
+
+    &--briefcase {
+      color: $figure-yellow;
+    }
+
+    &--download {
+      color: $figure-blue;
+    }
+
+    &--smile {
+      color: $figure-green;
+    }
+
+    &--users {
+      color: $figure-rose;
+    }
+  }
+
+  &__figure {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 14px;
+
+
+    &--yellow {
+      color: $figure-yellow;
+    }
+
+    &--blue {
+      color: $figure-blue;
+    }
+
+    &--green {
+      color: $figure-green;
+    }
+
+    &--rose {
+      color: $figure-rose;
+    }
+  }
+
+  &__sale {
+    color: $white;
+  }
+}

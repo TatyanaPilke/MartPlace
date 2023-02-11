@@ -1,0 +1,35 @@
+.profile {
+  outline: transparent;
+  // position: relative;
+
+  &:hover+.header__drop-down{
+    display: block;
+    position: absolute;
+    top: 84px;
+    right: 0;
+  }
+
+  &__name {
+    margin-top: 4px;
+    font-weight: 500;
+    color: $grey-light;
+    display: block;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__check {
+    color: $blue;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  &__foto {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+}

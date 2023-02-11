@@ -1,0 +1,30 @@
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: $footer-link;
+  border-radius: 50%;
+  border: transparent;
+  outline: transparent;
+}
+
+// .slick-dots li если добавляю эти классы, тогда .slick-active не работает и не применяются стили, если оставляю вот так - тогда в карточках button тоже приобретают бордеры, хоть и бордер нон есть.
+
+.slick-active button {
+  background-color: transparent;
+  border: 1px solid $footer-link;
+}

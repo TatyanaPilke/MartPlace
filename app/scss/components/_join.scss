@@ -1,0 +1,31 @@
+.join {
+  background: linear-gradient(to right, #661e90 0%,#0d37d9 100%);
+  padding: 100px 0 125px;
+
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 36px;
+    color: $white;
+    max-width: 530px;
+
+    @media (max-width: 768px){
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    color: $white;
+    margin: 22px 0 50px;
+  }
+
+  &__link {
+    padding: 18px 43px;
+    font-size: 16px;
+
+    @media (max-width: 768px){
+      padding: 15px 25px;
+    }
+  }
+}

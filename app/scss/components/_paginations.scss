@@ -1,0 +1,56 @@
+.paginations {
+  position: absolute;
+  right: 0;
+
+  &__item-paginations {
+    text-align: center;
+    margin-right: 5px;
+    width: 50px;
+    height: 38px;
+
+    &:last-child {
+      margin: 0 0 0 20px;
+    }
+
+    &:first-child {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  &__link-paginations {
+    padding: 10px;
+    display: block;
+    border-radius: 40%;
+    width: 50px;
+    height: 38px;
+    color: #747b86;
+    background-color: $white;
+    transition: color 0.3s ease;
+
+    &--active {
+      background-color: $blue;
+      color: $white;
+    }
+
+    &:focus {
+      background-color: $blue;
+      color: $white;
+    }
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+
+    &--arrow {
+
+      &:focus {
+        background-color: $violet;
+      }
+
+      &:hover {
+        background-color: $violet;
+      }
+    }
+  }
+}

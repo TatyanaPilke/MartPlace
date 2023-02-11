@@ -1,0 +1,86 @@
+.advantage {
+  padding: 113px 0 82px;
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+
+  &__inner {
+    flex-wrap: wrap;
+    counter-reset: number;
+  }
+
+  &__title {
+    margin: 0 auto 60px;
+  }
+
+  &__text {
+    margin: 21px auto;
+    max-width: 675px;
+  }
+
+  &__info {
+    text-align: center;
+    max-width: 360px;
+    padding: 45px 30px 52px;
+    margin-bottom: 40px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    counter-increment: number;
+    position: relative;
+
+    @media (max-width: 1120px) {
+     margin: 0 auto 30px;
+    }
+
+    
+    @media (max-width: 576px) {
+      max-width: 100%;
+     }
+
+    &:before {
+      content: counter(number, decimal-leading-zero);
+      position: absolute;
+      font-size: 48px;
+      font-weight: 300;
+      top: 20px;
+      left: 20px;
+      color: $blue;
+      opacity: 0.2;
+    }
+  }
+
+  &__title-payment {
+    margin: 40px 0 20px;
+    padding: 0;
+  }
+
+  &__img {
+    font-size: 60px;
+    width: 75px;
+    height: 75px;
+
+    &--payment {
+      color: $blue;
+    }
+
+    &--product {
+      color: $violet;
+    }
+
+    &--secure {
+      color: $figure-green;
+    }
+
+    &--code {
+      color: $figure-yellow;
+    }
+
+    &--update {
+      color: $figure-blue;
+    }
+
+    &--support {
+      color: $figure-rose;
+    }
+  }
+}

@@ -1,0 +1,247 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: $grey;
+  background-color: $white;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.content-page {
+  background-color: #eff1f5;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.5 ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  margin-left: 7px;
+  outline: transparent;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-jcsb {
+  justify-content: space-between;
+}
+
+.f-aic {
+  align-items: center;
+}
+
+.hidden {
+  font-size: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  font-size: 30px;
+  background-color: $white;
+  padding: 32px 30px 32px 30px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  white-space: nowrap;
+
+  @media (max-width: 576px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 20px;
+  }
+}
+
+.text {
+  color: $grey;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.text-blue {
+  color: #0674ec;
+}
+
+.text-violet {
+  color: #7347c1;
+}
+
+.title-news {
+  font-size: 36px;
+  color: $black;
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  border-radius: 30px;
+  border: 1px solid transparent;
+  outline: transparent;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+
+  &--blue {
+    background-color: $blue;
+    color: $white;
+
+    &:focus {
+      background-color: rgba($blue, 0.9);
+      box-shadow: 0 0 5px 0 rgba($blue, 0.8);
+      color: $white;
+    }
+
+    &:hover {
+      background-color: rgba($blue, 0.8);
+      color: $white;
+    }
+
+    &:active {
+      box-shadow: inset 0 0 5px 0 rgba($blue, 0.5);
+      color: $white;
+    }
+
+  }
+
+  &--violet {
+    background-color: $white;
+    color: #7347c1;
+
+
+    &:focus {
+      background-color: rgba($violet, 0.9);
+      box-shadow: 0 0 5px 0 rgba($violet, 0.8);
+      color: $white;
+    }
+
+    &:hover {
+      background-color: rgba($violet, 0.8);
+      color: $white;
+    }
+
+    &:active {
+      box-shadow: inset 0 0 5px 0 rgba($violet, 0.5);
+      color: $white;
+    }
+  }
+
+  &--white {
+    background-color: $white;
+    color: #0674ec;
+
+    &:focus {
+      box-shadow: 0 0 5px 0 rgba($grey, 0.8);
+      color: $white;
+    }
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $white;
+      color: $white;
+    }
+
+    &:active {
+      box-shadow: inset 0 0 5px 0 rgba($grey, 0.5);
+      color: $white;
+    }
+  }
+
+  &--grey {
+    color: #747b86;
+    background-color: #f1f3f6;
+    font-size: 15px;
+
+    &:focus {
+      box-shadow: 0 0 5px 0 rgba($grey, 0.8);
+      background-color: rgba($blue, 0.8);
+      color: $white;
+    }
+
+    &:hover {
+      background-color: rgba($blue, 0.8);
+      color: $white;
+    }
+
+    &:active {
+      box-shadow: inset 0 0 5px 0 rgba($blue, 0.5);
+      background-color: rgba($blue, 0.8);
+      color: $white;
+    }
+  }
+
+  &--transparent {
+    color: $white;
+    background-color: transparent;
+    border: 1px solid $white;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+
+    &:focus {
+      box-shadow: 0 0 5px 0 rgba($white, 0.8);
+    }
+
+    &:hover {
+      background-color: rgba($white, 0.8);
+      color: $blue;
+    }
+
+    &:active {
+      box-shadow: inset 0 0 5px 0 rgba($blue, 0.5);
+      color: $blue;
+    }
+  }
+}
